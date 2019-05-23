@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
 *,html,body {
     box-sizing: border-box;
@@ -54,11 +54,11 @@ html {
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
-
+    font-size: 2.2rem;
 }
 
 p {
-    font-size: 25px;
+    font-size: 1.6rem;
     font-family: 'Muli', serif;
     line-height: 50px
 }
@@ -79,12 +79,11 @@ p {
     grid-template-columns: auto auto auto;
     padding: 10px;
     border: none;
-    background: #CB356B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-       
-    border-radius: 50px;
-    font-size: 
+    background: #cb3066;
+    background: -webkit-linear-gradient(to right, #ad5389, #cb3066);  
+    background: linear-gradient(to right, #ad5389, #cb3066);    
+    border-radius: 15px;
+    box-shadow: 2px 4px 4px 0px #181617;
 }
 
 .nav-right {
@@ -92,10 +91,11 @@ p {
     grid-template-columns: auto auto auto;
     padding: 10px;
     border: none;
-    background: #CB356B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-    border-radius: 50px;
+    background: #cb3066;
+    background: -webkit-linear-gradient(to right, #ad5389, #cb3066);  
+    background: linear-gradient(to right, #ad5389, #cb3066);      
+    border-radius: 15px;
+    box-shadow: 2px 4px 4px 0px #181617;
 }
 
 .nav-center {
@@ -107,7 +107,21 @@ p {
 
 .nav .nav-left a, .nav-right a {
     color: white;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
 
+.nav .nav-left a:hover, .nav-right a:hover {
+    color: black;
+    border: none;
+    background: #f857a6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-weight: 550;      
+    padding: 9px;
+    border-radius: 20px;
 }
 
 .el1 {
@@ -126,7 +140,7 @@ p {
 .el4 {
     padding: 80px;
     text-align: center;
-    font-size: 80px;
+    font-size: 5rem;
     font-family: 'Rock Salt', cursive;
     position: -webkit-sticky;
     display: flex;
