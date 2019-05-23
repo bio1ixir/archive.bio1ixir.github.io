@@ -111,6 +111,10 @@ p {
     font-family: 'Cinzel', serif;
     font-weight: 500;
     font-size: 1.5rem;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 .nav .nav-left a:hover, .nav-right a:hover {
@@ -122,6 +126,11 @@ p {
     font-weight: 550;      
     padding: 9px;
     border-radius: 20px;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+	
 }
 
 .el1 {
