@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 *,html,body {
     box-sizing: border-box;
 
@@ -14,14 +14,16 @@ html {
 }
 
 
-.container {
+body .container {
+    position: relative;
+    z-index: 1;
     width: 1500px;
-        margin:100px auto;
-        padding:20px 25px;
-        border:1px solid #ccc;
-        background-color: white;
-        border-radius: 25px;
-        box-shadow: 0px 0px 25px #181617;
+    margin:100px auto 70px;
+    padding:20px 25px;
+    border:1px solid #ccc;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px #181617;
 }
 
 .main-logo:hover {
@@ -202,10 +204,27 @@ p {
 }
 
 .pseudo-padding {
-    padding: 50px;
+    padding: 60px;
 }
 
-footer {
+body .team {
+    width: 1500px;
+    margin: -15px auto 100px auto;
+    z-index: -1;
+    padding:600px 25px;
+    border:1px solid #ccc;
+    background-color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 0px 25px #181617;
+}
 
-    
+
+
+
+footer {
+    text-align: center;
+    color: #ccc;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0 0 45px 0;
 }
