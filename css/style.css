@@ -94,8 +94,8 @@ p {
     padding: 10px;
     border: none;
     background: #cb3066;
-    background: -webkit-linear-gradient(to right, #ad5389, #cb3066);  
-    background: linear-gradient(to right, #ad5389, #cb3066);      
+    background: -webkit-linear-gradient(to right, #cb3066, #ad5389);  
+    background: linear-gradient(to right, #cb3066, #ad5389);      
     border-radius: 15px;
     box-shadow: 2px 4px 4px 0px #181617;
 }
