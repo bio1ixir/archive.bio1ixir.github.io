@@ -17,8 +17,8 @@ html {
 body .container {
     position: relative;
     z-index: 1;
-    width: 1500px;
-    margin:100px auto 70px;
+    width: 95rem;
+    margin:100px auto 0px;
     padding:20px 25px;
     border:1px solid #ccc;
     background-color: white;
@@ -94,8 +94,8 @@ p {
     padding: 10px;
     border: none;
     background: #cb3066;
-    background: -webkit-linear-gradient(to right, #ad5389, #cb3066);  
-    background: linear-gradient(to right, #ad5389, #cb3066);      
+    background: -webkit-linear-gradient(to left, #ad5389, #cb3066);  
+    background: linear-gradient(to left, #ad5389, #cb3066);      
     border-radius: 15px;
     box-shadow: 2px 4px 4px 0px #181617;
 }
@@ -226,5 +226,5 @@ footer {
     text-align: center;
     color: #ccc;
     font-family: 'Noto Sans KR', sans-serif;
-    padding: 0 0 45px 0;
+    padding: 0 0 3rem 0;
 }
