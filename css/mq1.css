@@ -81,7 +81,7 @@
         align-content: left;
     }
     .el4 {
-        padding: 80px;
+        padding: 0px;
         text-align: center;
         font-family: 'Rock Salt', cursive;
         position: -webkit-sticky;
@@ -117,7 +117,7 @@
         width: 85%;
         margin: -1rem auto 100px auto;
         z-index: -1;
-        padding:600px 25px;
+        padding:3rem 30px;
         border:1px solid #ccc;
         background-color: white;
         border-bottom-left-radius: 25px;

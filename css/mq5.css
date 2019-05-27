@@ -1,32 +1,44 @@
-@media only screen and (max-width:776px) {
+/*  Enter the iPhone dimensions  */
+
+
+
+@media only screen and (max-width:694px) {
     body .container {
         width: 100%;
     }
 
     .main-logo {
-        width: 40vw;
+        width: 55vw;
+        height: auto;
         padding: 0 0rem 0rem 0;
     }
 
-    html body .container .pool h1, h2 {
-        text-align: right;
-        padding: 0 0rem 0rem 0;
+    html body .container .pool h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0 0rem 0rem 0rem;
     }
     
+    html body .container .pool #mq-3-h1 h1 {
+        text-align: center;
+        padding: 2rem 4rem 0rem 0;
+    }
+
     html body .container .pool p {
         font-size: 1.4rem;
-        padding: 0 5rem 0 0;
+        padding: 0rem 99px 0rem 1px;
         font-family: 'Muli', serif;
-        line-height: 2.5rem;
+        line-height: 2.7rem;
         text-align: center;
     }
     
     html body .container .pool #wrap-edge p {
         font-size: 1.6rem;
-        padding: 0 3rem 0 0;
+        padding: 1rem 3rem 0 0;
         font-family: 'Muli', serif;
         line-height: 3.2rem;
-        text-align: right;
+        text-align: center;
     }
 
     .nav {

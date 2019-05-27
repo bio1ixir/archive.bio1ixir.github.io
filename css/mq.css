@@ -1,32 +1,45 @@
-@media only screen and (max-width:776px) {
+
+@media only screen and (max-width:780px) {
     body .container {
         width: 100%;
     }
 
     .main-logo {
-        width: 40vw;
-        padding: 0 0rem 0rem 0;
+        width: 750px;
+
+        padding: 0 25rem 1rem 0rem;
     }
 
-    html body .container .pool h1, h2 {
-        text-align: right;
-        padding: 0 0rem 0rem 0;
+    html body .container .pool h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0 0;
     }
-    
+
+    html body .container .pool #mq-3-h1 h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.2rem;
+        text-align: left;
+        padding: 2rem 4rem 0rem 0;
+    }
+
     html body .container .pool p {
         font-size: 1.4rem;
-        padding: 0 5rem 0 0;
+        padding: 0 9rem 0 0;
         font-family: 'Muli', serif;
         line-height: 2.5rem;
         text-align: center;
     }
     
+
+    
     html body .container .pool #wrap-edge p {
         font-size: 1.6rem;
-        padding: 0 3rem 0 0;
+        padding: 0 0rem 0 0;
         font-family: 'Muli', serif;
         line-height: 3.2rem;
-        text-align: right;
+        text-align: center;
     }
 
     .nav {
@@ -132,7 +145,7 @@
         width: 95%;
         margin: -1rem auto 100px auto;
         z-index: -1;
-        padding:3rem 30px;
+        padding:30px 25px;
         border:1px solid #ccc;
         background-color: white;
         border-bottom-left-radius: 25px;
@@ -141,6 +154,3 @@
     }
 
 }
-
-
-

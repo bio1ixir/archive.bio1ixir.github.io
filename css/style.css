@@ -133,7 +133,6 @@ html body .container .pool p {
     transition-duration: 0.8s;
     transition-timing-function: ease;
     transition-delay: 0s;
-    
 }
 
 .el1 {
@@ -150,7 +149,7 @@ html body .container .pool p {
     align-content: left;
 }
 .el4 {
-    padding: 80px;
+    padding: 0px;
     text-align: center;
     font-family: 'Rock Salt', cursive;
     position: -webkit-sticky;
@@ -214,15 +213,53 @@ body .team {
     padding:3rem 30px;
     border:1px solid #ccc;
     background-color: white;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-radius: 25px;
     box-shadow: 0px 0px 25px #181617;
 }
 
 
-    footer {
+    footer h1 {
         text-align: center;
         color: #ccc;
         font-family: 'Noto Sans KR', sans-serif;
-        padding: 0 0 3rem 0;
+        padding: 0 0 0rem 0;
+        font-size: 1rem;
     }
+
+footer .footer-text {
+    text-align: center;
+    color: #ccc;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0 0 0rem 0;
+    font-size: 1.2rem;
+    line-height: 0.1rem;
+}
+
+footer .tag {
+    display: block;
+    font-size: 1.3rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(197, 144, 221);
+    text-decoration: none;
+    font-weight: 500;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    text-align: center;
+    position: relative;  
+
+}
+
+footer .tag:hover {
+    color: #ccc;
+    border: none;
+    font-size: 1.5rem;      
+    padding: 0 9px;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
