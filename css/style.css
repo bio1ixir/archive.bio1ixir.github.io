@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
-*,html,body {
+*, html, body {
     box-sizing: border-box;
 }
 html {
