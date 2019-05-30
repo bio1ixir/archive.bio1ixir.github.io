@@ -3,7 +3,7 @@ $(function() {
     $(window).scroll(function() {
       if ($(window).width() < 776) {
         var mass = 100 + '%';
-        if ($(window).scrollTop() > 50) {
+        if ($(window).scrollTop() > 30) {
           $('.container').css({'width': mass,
           'transition-property': 'all',
           'transition-duration': '0.5s',
@@ -11,7 +11,7 @@ $(function() {
           'transition-delay': '0s'});
         }
         else {
-          mass = 93 + '%';
+          mass = 90 + '%';
           $('.container').css({'width': mass,
           'transition-property': 'all',
           'transition-duration': '0.5s',
