@@ -1,6 +1,6 @@
 @media only screen and (max-width:776px) {
     body .container {
-        width: 100%;
+        width: 90%;
     }
 
     .main-logo {
@@ -22,7 +22,7 @@
     }
     
     html body .container .pool #wrap-edge p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         padding: 0 3rem 0 0;
         font-family: 'Muli', serif;
         line-height: 3.2rem;

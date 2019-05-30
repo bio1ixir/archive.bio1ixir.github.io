@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
-*,html,body {
+*, html, body {
     box-sizing: border-box;
 }
 html {
@@ -54,15 +54,16 @@ text-align: center;
     padding: 100px 0 10px 110px;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
 }
 
+
 html body .container .pool p {
     font-size: 1.6rem;
     font-family: 'Muli', serif;
-    line-height: 3.2rem;
+    line-height: 3rem;
 }
 
 .nav {
@@ -218,20 +219,20 @@ body .team {
 }
 
 
-    footer h1 {
-        text-align: center;
-        color: #ccc;
-        font-family: 'Noto Sans KR', sans-serif;
-        padding: 0 0 0rem 0;
-        font-size: 1rem;
-    }
+footer p {
+    text-align: center;
+    color: #ccc;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0 0 0rem 0;
+    font-size: 0.5rem;
+}
 
 footer .footer-text {
     text-align: center;
     color: #ccc;
     font-family: 'Noto Sans KR', sans-serif;
     padding: 0 0 0rem 0;
-    font-size: 1.2rem;
+    font-size: 93%;
     line-height: 0.1rem;
 }
 
@@ -239,7 +240,7 @@ footer .tag {
     display: block;
     font-size: 1.3rem;
     font-family: 'Noto Sans KR', sans-serif;
-    color: rgb(197, 144, 221);
+    color: rgba(197, 144, 221, 0.815);
     text-decoration: none;
     font-weight: 500;
     transition-property: all;
@@ -248,14 +249,14 @@ footer .tag {
     transition-delay: 0s;
     text-align: center;
     position: relative;  
-
+    padding: 1rem 0 0 0;
 }
 
 footer .tag:hover {
-    color: #ccc;
+    color: #db8abb;
     border: none;
     font-size: 1.5rem;      
-    padding: 0 9px;
+    padding: 0.8rem 0 0.5rem 0;
     border-radius: 20px;
     transition-property: all;
     transition-duration: 0.8s;

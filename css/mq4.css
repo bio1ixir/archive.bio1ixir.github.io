@@ -1,72 +1,56 @@
 @media only screen and (max-width:754px) {
     body .container {
         width: 100%;
+        padding:5% 0 0 0rem;
+        margin:20% auto 0;
+        border: hidden;
+        box-shadow: 0 0 1.5rem #181617;    
     }
 
     .main-logo {
-        width: 50vw;
-        height: auto;
-        padding: 0 0rem 0rem 0;
+        display: none;
+    }
+
+
+    .pool {
+        padding: 100px 0 50px 10px;
     }
 
     html body .container .pool h1 {
         font-family: 'Playfair Display', serif;
         font-size: 2.2rem;
         text-align: center;
-        padding: 0 0rem 0rem 15rem;
+        padding: 0 0rem 0rem 0rem;
+        line-height: 95%;
     }
-    
-    html body .container .pool #mq-3-h1 h1 {
-        text-align: center;
-        padding: 2rem 4rem 0rem 0;
-    }
+
 
     html body .container .pool p {
         font-size: 1.4rem;
-        padding: 0rem 99px 0rem 1px;
+        padding: 0.6rem 0rem 0rem 0px;
         font-family: 'Muli', serif;
-        line-height: 2.7rem;
+        line-height: 2.4rem;
         text-align: center;
     }
     
     html body .container .pool #wrap-edge p {
-        font-size: 1.6rem;
-        padding: 1rem 3rem 0 0;
+        font-size: 1.4rem;
+        padding: 0.5rem 0rem 0.5rem 0;
         font-family: 'Muli', serif;
         line-height: 3.2rem;
         text-align: center;
     }
 
     .nav {
-        padding: 0px;
-        display: grid;
-        grid-template-columns: auto auto auto;    
-        grid-template-rows: auto auto;
-        grid-template-areas: '. area .''. area .';
+        padding: 0 0 0 0px;
     }
 
     .nav-left {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-        border: none;
-        background: #cb3066;
-        background: -webkit-linear-gradient(to right, #ad5389, #cb3066);  
-        background: linear-gradient(to right, #ad5389, #cb3066);    
-        border-radius: 15px;
-        box-shadow: 2px 4px 4px 0px #181617;
+        display: none;
     }
 
     .nav-right {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-        border: none;
-        background: #cb3066;
-        background: -webkit-linear-gradient(to left, #ad5389, #cb3066);  
-        background: linear-gradient(to left, #ad5389, #cb3066);      
-        border-radius: 15px;
-        box-shadow: 2px 4px 4px 0px #181617;
+        display: none;
     }
 
     .nav-center {
@@ -75,65 +59,19 @@
         font-size: 3rem;
     }
 
-
-
-    .nav .nav-left a, .nav-right a {
-        color: white;
-        text-decoration: none;
-        font-family: 'Cinzel', serif;
-        font-weight: 500;
-        font-size: 1.5vw;
-        transition-property: all;
-        transition-duration: 0.8s;
-        transition-timing-function: ease;
-        transition-delay: 0s;
-    }
-
-
-    .el1 {
-        grid-row: row ;
-        align-content: left;
-        text-align: left;
-    }
-    .el2 {
-        grid-row: row ;
-        align-content: left;
-    }
-    .el3 {
-        grid-row: row ;
-        align-content: left;
-    }
     .el4 {
         padding: 0px;
         text-align: center;
         font-family: 'Rock Salt', cursive;
         position: -webkit-sticky;
-        display: flex;
         justify-content: center;
         align-items: center;
         position: sticky;
         top: 0;
     }
 
-
-    .el5 {
-        grid-row: row;
-        align-content: center;
-    }
-
-    .el6 {
-        grid-row: row ;
-        align-content: center;
-    }
-
-
-    .el7 {
-        grid-row: row ;
-        align-content: center;
-    }
-
     .pseudo-padding {
-        padding: 0px;
+        padding: 0 0 0 0;
     }
 
     body .team {
