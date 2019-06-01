@@ -109,7 +109,7 @@ html body .container .pool p {
 .nav-center {
     display: grid;
     grid-area: area;
-
+    font-size: 4.5rem;
 }
 
 

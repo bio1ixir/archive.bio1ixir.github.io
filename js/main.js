@@ -4,13 +4,15 @@ $(function() {
     if ($(window).width() <= 776) {
       var mass = 100 + '%';
       if ($(window).scrollTop() > 0) {
-        $('.container').css({'width': mass,
+        $('.container').css({
+        'width': mass,
         'transition-property': 'all',
         'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
 
-        $('.el4').css({'font-size': '2rem', 
+        $('.el4').css({
+        'font-size': '2rem', 
         'line-height': '0rem', 
         'padding': '0 0 0px 0px',
         'transition-property': 'all',
@@ -49,7 +51,7 @@ $(function() {
       $('.el4').css({'font-size': mass, 'line-height': mass, 'padding': pad});
     }
     else if ($(window).width() >= 1586) {
-      var mass = Math.max(3, 5-0.02*$(this).scrollTop()) + 'rem';
+      var mass = Math.max(3, 4.5-0.02*$(this).scrollTop()) + 'rem';
       var pad = Math.max(10, 16-0.02*$(this).scrollTop()) + 'px';
       $('.el4').css({'font-size': mass, 'line-height': mass, 'padding': pad});
     }
