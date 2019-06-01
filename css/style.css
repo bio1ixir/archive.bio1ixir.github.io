@@ -23,7 +23,7 @@ body .container {
     border:1px solid #ccc;
     background-color: white;
     border-radius: 1.6rem;
-    box-shadow: 0 0 1.5rem #181617;
+    box-shadow: 0 0 3rem #181617; 
 }
 
 .main-logo:hover {
@@ -104,7 +104,12 @@ html body .container .pool p {
 .nav-center {
     display: grid;
     grid-area: area;
-    font-size: 5rem;
+}
+
+@media only screen and (min-width:1586) {
+    .nav-center {
+        font-size: 5rem;
+    }
 }
 
 

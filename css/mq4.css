@@ -3,8 +3,7 @@
         width: 100%;
         padding:5% 0 0 0rem;
         margin:20% auto 0;
-        border: hidden;
-        box-shadow: 0 0 1.5rem #181617;    
+   
     }
 
     .main-logo {
@@ -56,11 +55,10 @@
     .nav-center {
         display: grid;
         grid-area: area;
-        font-size: 3rem;
+        font-size: 3.3rem;
     }
 
     .el4 {
-        padding: 0px;
         text-align: center;
         font-family: 'Rock Salt', cursive;
         position: -webkit-sticky;
