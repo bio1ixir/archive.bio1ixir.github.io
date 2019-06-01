@@ -23,7 +23,7 @@ body .container {
     border:1px solid #ccc;
     background-color: white;
     border-radius: 1.6rem;
-    box-shadow: 0 0 1.5rem #181617;
+    box-shadow: 0 0 3rem #181617; 
 }
 
 .main-logo:hover {
@@ -47,7 +47,12 @@ body .container {
     transition-delay: 0s;
 }
 
-
+.compact-logo {
+    display: none;
+    width: 25vw;
+    height: auto;
+    padding: 0 0 50px 0;
+}
 
 .pool {
 text-align: center;
@@ -104,7 +109,7 @@ html body .container .pool p {
 .nav-center {
     display: grid;
     grid-area: area;
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 

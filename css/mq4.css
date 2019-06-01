@@ -3,14 +3,17 @@
         width: 100%;
         padding:5% 0 0 0rem;
         margin:20% auto 0;
-        border: hidden;
-        box-shadow: 0 0 1.5rem #181617;    
+   
     }
 
     .main-logo {
         display: none;
     }
 
+    .compact-logo {
+        display: inline-block;
+
+    }
 
     .pool {
         padding: 100px 0 50px 10px;
@@ -60,7 +63,6 @@
     }
 
     .el4 {
-        padding: 0px;
         text-align: center;
         font-family: 'Rock Salt', cursive;
         position: -webkit-sticky;
