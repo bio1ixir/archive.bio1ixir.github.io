@@ -47,7 +47,12 @@ body .container {
     transition-delay: 0s;
 }
 
-
+.compact-logo {
+    display: none;
+    width: 25vw;
+    height: auto;
+    padding: 0 0 50px 0;
+}
 
 .pool {
 text-align: center;
@@ -104,12 +109,7 @@ html body .container .pool p {
 .nav-center {
     display: grid;
     grid-area: area;
-}
 
-@media only screen and (min-width:1586) {
-    .nav-center {
-        font-size: 5rem;
-    }
 }
 
 

@@ -10,6 +10,10 @@
         display: none;
     }
 
+    .compact-logo {
+        display: inline-block;
+
+    }
 
     .pool {
         padding: 100px 0 50px 10px;
@@ -55,7 +59,7 @@
     .nav-center {
         display: grid;
         grid-area: area;
-        font-size: 3.3rem;
+        font-size: 3rem;
     }
 
     .el4 {
