@@ -14,7 +14,7 @@ $(function() {
         $('.el4').css({
         'font-size': '2rem', 
         'line-height': '0rem', 
-        'padding': '0 0 0px 0px',
+        'padding': '30px 0 0px 0px',
         'transition-property': 'all',
         'transition-duration': '1s',
         'transition-timing-function': 'ease',
