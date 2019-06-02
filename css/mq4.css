@@ -12,7 +12,7 @@
 
     .compact-logo {
         display: inline-block;
-
+        padding: 0px 0px 0px 55px;
     }
 
     .pool {
@@ -46,6 +46,10 @@
 
     .nav {
         padding: 0 0 0 0px;
+    }
+
+    .nav-s {
+        
     }
 
     .nav-left {

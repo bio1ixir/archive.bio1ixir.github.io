@@ -11,14 +11,26 @@ $(function() {
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
 
+
+
         $('.el4').css({
         'font-size': '2rem', 
         'line-height': '0rem', 
-        'padding': '30px 0 0px 0px',
+        'padding': '30px 0% 0px 0%',
         'transition-property': 'all',
         'transition-duration': '1s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
+
+        $('.nav-s').css(
+          {'display': 'grid',
+          'grid-template-columns': 'auto auto auto',
+          'transition-property': 'all',
+          'transition-duration': '1s',
+          'transition-timing-function': 'ease',
+          'transition-delay': '0s',
+          'align-content': 'center'}
+        );
       }
       else {
         mass = 90 + '%';
@@ -35,6 +47,15 @@ $(function() {
         'transition-duration': '1s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
+      
+        $('.nav-s').css(
+          {'display': 'none',
+          'transition-property': 'all',
+          'transition-duration': '1s',
+          'transition-timing-function': 'ease',
+          'transition-delay': '0s',
+          'align-content': 'center'}
+        );
       }
     }
 
