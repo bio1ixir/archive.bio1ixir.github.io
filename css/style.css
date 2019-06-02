@@ -182,9 +182,9 @@ html body .container .pool p {
 
 .button {
     background-color: white;
-    opacity: 0.6;
+    opacity: 2;
     border: none;
-    color: black;
+    color: rgb(102, 102, 102);
     text-align: center;
     text-decoration: none;
     display: inline-block;
