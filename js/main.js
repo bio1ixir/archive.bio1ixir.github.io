@@ -3,7 +3,7 @@ $(function() {
   $(window).scroll(function() {
     if ($(window).width() < 754) {
       var mass = 100 + '%';
-      if ($(window).scrollTop() > 0) {
+      if ($(window).scrollTop() > 10) {
         $('.container').css({
         'width': mass,
         'padding':'1rem 1.5rem',
@@ -36,6 +36,7 @@ $(function() {
       else {
         mass = 90 + '%';
         $('.container').css({'width': mass,
+        'padding':'1rem 1.5rem',
         'transition-property': 'all',
         'transition-duration': '0.5s',
         'padding': '1.4rem 1.5rem',
@@ -68,7 +69,7 @@ $(function() {
 
     else if ($(window).width() <= 776 && $(window).width() >= 754) {
       var mass = 100 + '%';
-      if ($(window).scrollTop() > 0) {
+      if ($(window).scrollTop() > 10) {
         $('.container').css({
         'width': mass,
         'padding': '1rem 1.5rem',
