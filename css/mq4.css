@@ -52,9 +52,17 @@
         
     }
 
+    .bounceInLeft {
+        -webkit-animation: bounceInLeft 5s; /* Safari 4+ */
+        -moz-animation:    bounceInLeft 5s; /* Fx 5+ */
+        -o-animation:      bounceInLeft 5s; /* Opera 12+ */
+        animation:         bounceInLeft 5s; /* IE 10+, Fx 29+ */
+    }
+
     .nav-left {
         display: none;
     }
+
 
     .nav-right {
         display: none;

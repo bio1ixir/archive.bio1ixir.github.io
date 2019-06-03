@@ -6,6 +6,7 @@ $(function() {
       if ($(window).scrollTop() > 0) {
         $('.container').css({
         'width': mass,
+        'padding':'1rem 1.5rem',
         'transition-property': 'all',
         'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
@@ -16,7 +17,7 @@ $(function() {
         $('.el4').css({
         'font-size': '2rem', 
         'line-height': '0rem', 
-        'padding': '30px 0% 0px 0%',
+        'padding': '0px 0% 0px 0%',
         'transition-property': 'all',
         'transition-duration': '1s',
         'transition-timing-function': 'ease',
@@ -37,6 +38,7 @@ $(function() {
         $('.container').css({'width': mass,
         'transition-property': 'all',
         'transition-duration': '0.5s',
+        'padding': '1.4rem 1.5rem',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
 
@@ -69,6 +71,7 @@ $(function() {
       if ($(window).scrollTop() > 0) {
         $('.container').css({
         'width': mass,
+        'padding': '1rem 1.5rem',
         'transition-property': 'all',
         'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
@@ -90,6 +93,7 @@ $(function() {
       else {
         mass = 90 + '%';
         $('.container').css({'width': mass,
+        'padding': '1.4rem 1.5rem',
         'transition-property': 'all',
         'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
