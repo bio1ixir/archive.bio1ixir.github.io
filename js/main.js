@@ -3,9 +3,10 @@ $(function() {
   $(window).scroll(function() {
     if ($(window).width() < 754) {
       var mass = 100 + '%';
-      if ($(window).scrollTop() > 0) {
+      if ($(window).scrollTop() > 10) {
         $('.container').css({
         'width': mass,
+        'padding':'1rem 1.5rem',
         'transition-property': 'all',
         'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
@@ -16,9 +17,9 @@ $(function() {
         $('.el4').css({
         'font-size': '2rem', 
         'line-height': '0rem', 
-        'padding': '30px 0% 0px 0%',
+        'padding': '0px 0% 0px 0%',
         'transition-property': 'all',
-        'transition-duration': '1s',
+        'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
 
@@ -35,8 +36,10 @@ $(function() {
       else {
         mass = 90 + '%';
         $('.container').css({'width': mass,
+        'padding':'1rem 1.5rem',
         'transition-property': 'all',
         'transition-duration': '0.5s',
+        'padding': '1.4rem 1.5rem',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
 
@@ -44,7 +47,7 @@ $(function() {
         'line-height': '0rem', 
         'padding': '30px 0px 0px 0px',
         'transition-property': 'all',
-        'transition-duration': '1s',
+        'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
       
@@ -66,9 +69,10 @@ $(function() {
 
     else if ($(window).width() <= 776 && $(window).width() >= 754) {
       var mass = 100 + '%';
-      if ($(window).scrollTop() > 0) {
+      if ($(window).scrollTop() > 10) {
         $('.container').css({
         'width': mass,
+        'padding': '1rem 1.5rem',
         'transition-property': 'all',
         'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
@@ -83,13 +87,14 @@ $(function() {
         'line-height': '0rem', 
         'padding': '30px 0% 0px 0%',
         'transition-property': 'all',
-        'transition-duration': '1s',
+        'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
       }
       else {
         mass = 90 + '%';
         $('.container').css({'width': mass,
+        'padding': '1.4rem 1.5rem',
         'transition-property': 'all',
         'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
@@ -99,7 +104,7 @@ $(function() {
         'line-height': '0rem', 
         'padding': '30px 0px 0px 0px',
         'transition-property': 'all',
-        'transition-duration': '1s',
+        'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
       }
@@ -112,6 +117,10 @@ $(function() {
       $('.el4').css({'font-size': mass, 'line-height': mass, 'padding': pad});
 
       $('.container').css({'width': '93%'});
+
+      $('.nav-s').css(
+        {'display': 'none'}
+      );
     }
    else if ($(window).width() <= 1586  && $(window).width() > 1076) {
       var mass = Math.max(2, 4-0.02*$(this).scrollTop()) + 'rem';
@@ -119,6 +128,10 @@ $(function() {
       $('.el4').css({'font-size': mass, 'line-height': mass, 'padding': pad});
 
       $('.container').css({'width': '85%'});
+
+      $('.nav-s').css(
+        {'display': 'none'}
+      );
     }
     else if ($(window).width() > 1586) {
       var mass = Math.max(3, 4.5-0.02*$(this).scrollTop()) + 'rem';
@@ -127,6 +140,20 @@ $(function() {
 
       $('.container').css({'width': '85rem'});
 
+      $('.nav-s').css(
+        {'display': 'none'}
+      );
+
     }
   });
 });
+
+
+
+function on() {
+  document.getElementsByClassName("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementsByClassName("overlay").style.display = "none";
+}
