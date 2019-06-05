@@ -19,7 +19,7 @@ $(function() {
         'line-height': '0rem', 
         'padding': '0px 0% 0px 0%',
         'transition-property': 'all',
-        'transition-duration': '1s',
+        'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
 
@@ -47,7 +47,7 @@ $(function() {
         'line-height': '0rem', 
         'padding': '30px 0px 0px 0px',
         'transition-property': 'all',
-        'transition-duration': '1s',
+        'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
       
@@ -87,7 +87,7 @@ $(function() {
         'line-height': '0rem', 
         'padding': '30px 0% 0px 0%',
         'transition-property': 'all',
-        'transition-duration': '1s',
+        'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
       }
@@ -104,7 +104,7 @@ $(function() {
         'line-height': '0rem', 
         'padding': '30px 0px 0px 0px',
         'transition-property': 'all',
-        'transition-duration': '1s',
+        'transition-duration': '0.5s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
       }
@@ -135,3 +135,13 @@ $(function() {
     }
   });
 });
+
+
+
+function on() {
+  document.getElementsByClassName("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementsByClassName("overlay").style.display = "none";
+}
