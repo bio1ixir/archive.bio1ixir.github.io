@@ -117,6 +117,10 @@ $(function() {
       $('.el4').css({'font-size': mass, 'line-height': mass, 'padding': pad});
 
       $('.container').css({'width': '93%'});
+
+      $('.nav-s').css(
+        {'display': 'none'}
+      );
     }
    else if ($(window).width() <= 1586  && $(window).width() > 1076) {
       var mass = Math.max(2, 4-0.02*$(this).scrollTop()) + 'rem';
@@ -124,6 +128,10 @@ $(function() {
       $('.el4').css({'font-size': mass, 'line-height': mass, 'padding': pad});
 
       $('.container').css({'width': '85%'});
+
+      $('.nav-s').css(
+        {'display': 'none'}
+      );
     }
     else if ($(window).width() > 1586) {
       var mass = Math.max(3, 4.5-0.02*$(this).scrollTop()) + 'rem';
@@ -131,6 +139,10 @@ $(function() {
       $('.el4').css({'font-size': mass, 'line-height': mass, 'padding': pad});
 
       $('.container').css({'width': '85rem'});
+
+      $('.nav-s').css(
+        {'display': 'none'}
+      );
 
     }
   });
