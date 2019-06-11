@@ -30,35 +30,23 @@
     }
 
     .nav {
-        padding: 0px;
-        display: grid;
-        grid-template-columns: auto auto auto;    
-        grid-template-rows: auto auto;
-        grid-template-areas: '. area .''. area .';
+        padding: 0 0 0 0px;
+    }
+
+    .overlay {
+        
+    }
+    .nav-s {
+        
     }
 
     .nav-left {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-        border: none;
-        background: #cb3066;
-        background: -webkit-linear-gradient(to right, #ad5389, #cb3066);  
-        background: linear-gradient(to right, #ad5389, #cb3066);    
-        border-radius: 15px;
-        box-shadow: 2px 4px 4px 0px #181617;
+        display: none;
     }
 
+
     .nav-right {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-        border: none;
-        background: #cb3066;
-        background: -webkit-linear-gradient(to left, #ad5389, #cb3066);  
-        background: linear-gradient(to left, #ad5389, #cb3066);      
-        border-radius: 15px;
-        box-shadow: 2px 4px 4px 0px #181617;
+        display: none;
     }
 
     .nav-center {
@@ -69,31 +57,14 @@
 
 
 
-    .nav .nav-left a, .nav-right a {
-        color: white;
-        text-decoration: none;
-        font-family: 'Cinzel', serif;
-        font-weight: 500;
-        font-size: 1.5vw;
-        transition-property: all;
-        transition-duration: 0.8s;
-        transition-timing-function: ease;
-        transition-delay: 0s;
-    }
-
-
     .el1 {
-        grid-row: row ;
-        align-content: left;
-        text-align: left;
+        display: none;
     }
     .el2 {
-        grid-row: row ;
-        align-content: left;
+        display: none;
     }
     .el3 {
-        grid-row: row ;
-        align-content: left;
+        display: none;
     }
     .el4 {
         padding: 0px;
@@ -109,19 +80,16 @@
 
 
     .el5 {
-        grid-row: row;
-        align-content: center;
+        display: none;
     }
 
     .el6 {
-        grid-row: row ;
-        align-content: center;
+        display: none;
     }
 
 
     .el7 {
-        grid-row: row ;
-        align-content: center;
+        display: none;
     }
 
     .pseudo-padding {

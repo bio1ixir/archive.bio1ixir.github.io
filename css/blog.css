@@ -1,0 +1,44 @@
+
+    @media only screen and (min-width:1586px) {
+    body .blog-container {
+        margin:7rem auto 100px; 
+        position: relative;
+        z-index: 1;
+        width: 85rem;
+        padding:1.4rem 1.5rem;
+        border:1px solid #ccc;
+        background-color: white;
+        border-radius: 1.6rem;
+        box-shadow: 0 0 3rem #181617;
+    }
+}
+
+@media only screen and (max-width:1586px) and (min-width:1076px) {
+
+    body .blog-container {
+        width: 85%;
+        margin:6rem auto 0;
+        padding:1.4rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width:1076px) {
+    body .blog-container {
+        width: 93%;
+    }
+}
+
+@media only screen and (max-width:776px) {
+    body .blog-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:754px) {
+    body .blog-container {
+        width: 100%;
+        padding:5% 0 0 0rem;
+        margin:20% auto 0;
+   
+    }
+}
