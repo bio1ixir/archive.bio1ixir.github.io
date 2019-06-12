@@ -18,17 +18,35 @@
 
 
 <body>
+        <div id="nav-l" class="overlay-left">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavl()">&times;</a>
+                <div class="overlay-content">
+                  <a href="src/blog.html">Blog</a>
+                  <a href="#">Projects</a>
+                  <a href="#">Events</a>
+                </div>
+              </div>
+
+              <div id="nav-r" class="overlay-r">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNavr()">&times;</a>
+                    <div class="overlay-content">
+                      <a href="#">Team</a>
+                      <a href="#">Testimony</a>
+                      <a href="#">Contacts</a>
+                    </div>
+                  </div>
     <!---animated fadeInUp delay-0s-->
 <div class="container animated fadeInDown delay-0s"> 
         <div class="nav">
             <div class="nav-left">
-                <div class="el1"><a href="#">Blog</a></div>
+                <div class="el1"><a href="src/blog.html">Blog</a></div>
                 <div class="el2"><a href="#">Projects</a></div>
                 <div class="el3"><a href="#">Events</a></div> 
             </div> 
+
             <div class="nav-s animated bounceInRight delay-0s">
                 <div></div>
-                <div><i class="fa fa-align-left" area-hidden="true"></i></div>
+                <div><span style="font-size:20px;cursor:pointer" onclick="openNavl()"><i class="fa fa-align-left" area-hidden="true"></i></span></div>
                 <div></div>    
             </div>
 
@@ -39,7 +57,7 @@
             <div class="nav-s animated bounceInLeft delay-0s">
                     <div></div> 
                     <div></div> 
-                    <div><i class="fa fa-align-right" area-hidden="true"></i></div>
+                    <div><span style="font-size:20px;cursor:pointer" onclick="openNavr()"><i class="fa fa-align-right" area-hidden="true"></i></span></div>
             </div>
 
             <div class="nav-right">
@@ -66,9 +84,11 @@
     <div class="team animated fadeInUp delay-1s">
        <!--- <h1>this is just dummy text</h1>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
--->
+-->     <div class="team-mates">
+            
+        </div>
     </div>
-        <footer>
+    <footer class="animated fadeInup delay-0s">
             <p class="footer-text">© 2019 Bio1ixir - IIT Jodhpur</p>
             <p class="footer-text"><i class="fa fa-code" area-hidden="true"></i> with <i class="em em-brain"></i> by<br>
             <a class="tag underline-magical" href="https://github.com/evi1haxor/">evi1haxor</a></p>
