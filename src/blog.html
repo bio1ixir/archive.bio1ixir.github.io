@@ -18,6 +18,23 @@
 
 
 <body>
+        <div id="nav-l" class="overlay-left">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavl()">&times;</a>
+                <div class="overlay-content">
+                  <a href="src/blog.html">Blog</a>
+                  <a href="#">Projects</a>
+                  <a href="#">Events</a>
+                </div>
+              </div>
+
+              <div id="nav-r" class="overlay-r">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNavr()">&times;</a>
+                    <div class="overlay-content">
+                      <a href="#">Team</a>
+                      <a href="#">Testimony</a>
+                      <a href="#">Contacts</a>
+                    </div>
+                  </div>
     <!---animated fadeInUp delay-0s-->
 <div class="container animated fadeInDown delay-0s"> 
         <div class="nav">
@@ -26,9 +43,10 @@
                 <div class="el2"><a href="#">Projects</a></div>
                 <div class="el3"><a href="#">Events</a></div> 
             </div> 
+
             <div class="nav-s animated bounceInRight delay-0s">
                 <div></div>
-                <div><i class="fa fa-align-left" area-hidden="true"></i></div>
+                <div><span style="font-size:20px;cursor:pointer" onclick="openNavl()"><i class="fa fa-align-left" area-hidden="true"></i></span></div>
                 <div></div>    
             </div>
 
@@ -39,7 +57,7 @@
             <div class="nav-s animated bounceInLeft delay-0s">
                     <div></div> 
                     <div></div> 
-                    <div><i class="fa fa-align-right" area-hidden="true"></i></div>
+                    <div><span style="font-size:20px;cursor:pointer" onclick="openNavr()"><i class="fa fa-align-right" area-hidden="true"></i></span></div>
             </div>
 
             <div class="nav-right">
@@ -48,7 +66,6 @@
                 <div class="el7"><a href="#">Contact</a></div> 
             </div> 
         </div>
-
         <div class="pseudo-padding">
          
         </div>
