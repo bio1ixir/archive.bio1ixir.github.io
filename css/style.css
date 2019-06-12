@@ -300,13 +300,28 @@ footer .tag:hover {
 
 
 
-.overlay-left, .overlay-r {
+.overlay-left {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
+    background: #cb3066;
+    background: -webkit-linear-gradient(to left, #ad5389, #cb3066);  
+    background: linear-gradient(to left, #ad5389, #cb3066);      
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 0.9;
+  }
+
+  .overlay-r {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
     background: #cb3066;
     background: -webkit-linear-gradient(to left, #ad5389, #cb3066);  
     background: linear-gradient(to left, #ad5389, #cb3066);      
