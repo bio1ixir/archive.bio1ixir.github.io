@@ -300,30 +300,19 @@ footer .tag:hover {
 
 
 
-.overlay {
+.overlay-left, .overlay-r {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background: #cb3066;
+    background: -webkit-linear-gradient(to left, #ad5389, #cb3066);  
+    background: linear-gradient(to left, #ad5389, #cb3066);      
     overflow-x: hidden;
     transition: 0.5s;
-  }
-
-  .overlay-r {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
+    opacity: 0.9;
   }
   
   .overlay-content {
@@ -331,60 +320,39 @@ footer .tag:hover {
     top: 25%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 2rem;
   }
   
-  .overlay a {
-    padding: 8px;
+  .overlay-left a, .overlay-r a {
+    padding: 0.5rem;
     text-decoration: none;
-    font-size: 36px;
-    color: #818181;
+    font-size: 2.1rem;
+    color: white;
     display: block;
     transition: 0.3s;
   }
 
-
-  .overlay-r a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .overlay a:hover, .overlay a:focus {
+  .overlay-left a:hover, .overlay-left a:focus, .overlay-r a:hover, .overlay-r a:focus {
     color: #f1f1f1;
+    font-size: 300%;
   }
 
-  .overlay-r a:hover, .overlay-r a:focus {
-    color: #f1f1f1;
-  }
-
-  .overlay .closebtn {
+  .overlay-left .closebtn, .overlay-r .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 1.25rem;
+    right: 3rem;
+    font-size: 3.6rem;
   }
  
-  .overlay-r .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
 
   @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    .overlay-left a, .overlay-r a {font-size: 1.2rem}
+
+    .overlay-left a:hover, .overlay-left a:focus, .overlay-r a:hover, .overlay-r a:focus {
+        font-size: 200%
     }
-.overlay-r .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    .overlay-r .closebtn, .overlay-left .closebtn {
+    font-size: 3rem;
+    top: 1rem;
+    right: 2rem;
     }
-  }
