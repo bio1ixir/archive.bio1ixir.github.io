@@ -3,7 +3,7 @@ $(function() {
   $(window).scroll(function() {
     if ($(window).width() <= 776) {
       var mass = 100 + '%';
-      if ($(window).scrollTop() > 10) {
+      if ($(window).scrollTop() > 5) {
         $('.container').css({
         'width': mass,
         'padding':'1rem 1.5rem',
@@ -77,54 +77,6 @@ $(function() {
         );
       }
     }
-
-    // else if ($(window).width() <= 776 && $(window).width() >= 754) {
-    //   var mass = 100 + '%';
-    //   if ($(window).scrollTop() > 10) {
-    //     $('.container').css({
-    //     'width': mass,
-    //     'padding': '1rem 1.5rem',
-    //     'transition-property': 'all',
-    //     'transition-duration': '0.5s',
-    //     'transition-timing-function': 'ease',
-    //     'transition-delay': '0s'});
-
-    //     $('.el4').css({
-    //     'font-size': '2rem', 
-    //     'line-height': '0rem', 
-    //     'padding': '30px 0% 0px 0%',
-    //     'transition-property': 'all',
-    //     'transition-duration': '0.5s',
-    //     'transition-timing-function': 'ease',
-    //     'transition-delay': '0s'});
-
-    //     $('.nav-s').css(
-    //       {'display': 'none'}
-    //     );
-    //   }
-    //   else {
-    //     mass = 90 + '%';
-    //     $('.container').css({'width': mass,
-    //     'padding': '1.4rem 1.5rem',
-    //     'transition-property': 'all',
-    //     'transition-duration': '0.5s',
-    //     'transition-timing-function': 'ease',
-    //     'transition-delay': '0s'});
-
-    //     $('.el4').css({'font-size': '3rem', 
-    //     'line-height': '0rem', 
-    //     'padding': '30px 0px 0px 0px',
-    //     'transition-property': 'all',
-    //     'transition-duration': '0.5s',
-    //     'transition-timing-function': 'ease',
-    //     'transition-delay': '0s'});
-
-    //           $('.nav-s').css(
-    //     {'display': 'none'}
-    //   );
-    //   }
-    // }
-
 
     if ($(window).width() <= 1076 && $(window).width() > 776) {
       var mass = Math.max(2, 4-0.18*$(this).scrollTop()) + 'rem';
@@ -209,3 +161,5 @@ function openNavr() {
 function closeNavr() {
   document.getElementById("nav-r").style.width = "0%";
 }
+
+// $(".contentt").append("<br>maxScroll: " + $("body").height() + "x" + $(window).height() );
