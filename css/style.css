@@ -71,20 +71,6 @@ html body .container .pool p {
     line-height: 3rem;
 }
 
-.overlay2  {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-}
-
 .nav-s {
     display: none;
     grid-template-columns: auto auto auto;
@@ -308,8 +294,8 @@ footer .tag:hover {
     top: 0;
     left: 0;
     background: #cb3066;
-    background: -webkit-linear-gradient(to left, #ad5389, #cb3066);  
-    background: linear-gradient(to left, #ad5389, #cb3066);      
+    background: -webkit-linear-gradient(40deg, #2e033b, #a82050);  
+    background: linear-gradient(-50deg, #2e033b, #a82050);      
     overflow-x: hidden;
     transition: 0.5s;
     opacity: 0.9;
@@ -323,8 +309,8 @@ footer .tag:hover {
     top: 0;
     right: 0;
     background: #cb3066;
-    background: -webkit-linear-gradient(to left, #ad5389, #cb3066);  
-    background: linear-gradient(to left, #ad5389, #cb3066);      
+    background: -webkit-linear-gradient(40deg, #2e033b, #a82050);  
+    background: linear-gradient(50deg, #2e033b, #a82050);      
     overflow-x: hidden;
     transition: 0.5s;
     opacity: 0.9;
@@ -342,13 +328,14 @@ footer .tag:hover {
     padding: 0.5rem;
     text-decoration: none;
     font-size: 2.1rem;
+    font-family: 'Cinzel', serif;
     color: white;
     display: block;
     transition: 0.3s;
   }
 
   .overlay-left a:hover, .overlay-left a:focus, .overlay-r a:hover, .overlay-r a:focus {
-    color: #f1f1f1;
+    color: #000000;
     font-size: 300%;
   }
 
