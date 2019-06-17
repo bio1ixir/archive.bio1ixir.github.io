@@ -7,8 +7,8 @@
 }
 html {
     background: #ad5389; 
-    background: -webkit-linear-gradient(to top, #3c1053, #ad5389);  
-    background: linear-gradient(to top, #3c1053, #ad5389);
+    background: -webkit-linear-gradient(-27deg, #3c1053, #ad5389);  
+    background: linear-gradient(-27deg, #3c1053, #ad5389);
     min-height: 100%;
 }
 
