@@ -13,9 +13,19 @@ $(function() {
         'transition-delay': '0s'});
 
 
-
+          if ($(window).width() <= 600) {
+            $('.el4').css({
+              'font-size': '2rem', 
+              'line-height': '0rem', 
+              'padding': '0px 0% 0px 0%',
+              'transition-property': 'all',
+              'transition-duration': '0.5s',
+              'transition-timing-function': 'ease',
+              'transition-delay': '0s'});
+      
+          }
         $('.el4').css({
-        'font-size': '2rem', 
+        'font-size': '2.5rem', 
         'line-height': '0rem', 
         'padding': '0px 0% 0px 0%',
         'transition-property': 'all',
@@ -51,20 +61,23 @@ $(function() {
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
 
-        $('.el4').css({'font-size': '3rem', 
-        'line-height': '0rem', 
-        'padding': '30px 0px 0px 0px',
-        'transition-property': 'all',
-        'transition-duration': '0.5s',
-        'transition-timing-function': 'ease',
-        'transition-delay': '0s'});
-      
+        $('.el4').css({
+          'font-size': '2rem', 
+          'line-height': '0rem', 
+          'padding': '0px 0% 0px 0%',
+          'transition-property': 'all',
+          'transition-duration': '0.5s',
+          'transition-timing-function': 'ease',
+          'transition-delay': '0s'});
+  
         $('.nav-s').css(
-          {'display': 'none',
+          {'display': 'grid',
+          'grid-template-columns': 'auto auto auto',
           'transition-property': 'all',
           'transition-duration': '1s',
           'transition-timing-function': 'ease',
-          'transition-delay': '0s'}
+          'transition-delay': '0s',
+          'align-content': 'center'}
         );
 
 
