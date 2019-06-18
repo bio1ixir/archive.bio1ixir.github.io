@@ -86,6 +86,7 @@
         transition-duration: 0.8s;
         transition-timing-function: ease;
         transition-delay: 0s;
+        outline: 0;
     }
 
 

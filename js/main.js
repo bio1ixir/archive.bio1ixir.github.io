@@ -8,7 +8,7 @@ $(function() {
         'width': mass,
         'padding':'1rem 1.5rem',
         'transition-property': 'all',
-        'transition-duration': '0.5s',
+        'transition-duration': '0.3s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
 
@@ -38,7 +38,7 @@ $(function() {
           {'display': 'grid',
           'grid-template-columns': 'auto auto auto',
           'transition-property': 'all',
-          'transition-duration': '1s',
+          'transition-duration': '0.3s',
           'transition-timing-function': 'ease',
           'transition-delay': '0s',
           'align-content': 'center'}
@@ -57,7 +57,7 @@ $(function() {
         $('.container').css({'width': mass,
         'padding':'1rem 1.5rem',
         'transition-property': 'all',
-        'transition-duration': '0.5s',
+        'transition-duration': '0.3s',
         'padding': '1.4rem 1.5rem',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
@@ -75,7 +75,7 @@ $(function() {
           {'display': 'grid',
           'grid-template-columns': 'auto auto auto',
           'transition-property': 'all',
-          'transition-duration': '1s',
+          'transition-duration': '0.3s',
           'transition-timing-function': 'ease',
           'transition-delay': '0s',
           'align-content': 'center'}
@@ -96,9 +96,6 @@ $(function() {
       if ($(window).scrollTop() > 0) {
         $('.el4').css({'font-size': '2rem', 'line-height': '2rem', 'padding': '13px'});
       }
-      // var mass = Math.max(2, 4-0.18*$(this).scrollTop()) + 'rem';
-      // var pad = Math.max(13, 16-0.05*$(this).scrollTop()) + 'px';
-      // $('.el4').css({'font-size': mass, 'line-height': mass, 'padding': pad});
       else {
         $('.el4').css({'font-size': '3rem', 'line-height': '3rem', 'padding': '15px'});
       }
@@ -124,9 +121,6 @@ $(function() {
     else {
       $('.el4').css({'font-size': '3.3rem', 'line-height': '3.3rem', 'padding': '16px'});
     }
-      // var mass = Math.max(2, 4-0.02*$(this).scrollTop()) + 'rem';
-      // var pad = Math.max(5, 16-0.02*$(this).scrollTop()) + 'px';
-      // $('.el4').css({'font-size': mass, 'line-height': mass, 'padding': pad});
 
       $('.container').css({'width': '85%'});
 
@@ -153,9 +147,6 @@ $(function() {
     else {
       $('.el4').css({'font-size': '4.3rem', 'line-height': '4.5rem', 'padding': '16px'});
     }
-      // var mass = Math.max(3, 4.5-0.02*$(this).scrollTop()) + 'rem';
-      // var pad = Math.max(10, 16-0.02*$(this).scrollTop()) + 'px';
-      // $('.el4').css({'font-size': mass, 'line-height': mass, 'padding': pad});
 
       $('.container').css({'width': '85rem'});
 
@@ -193,5 +184,3 @@ function openNavr() {
 function closeNavr() {
   document.getElementById("nav-r").style.width = "0%";
 }
-
-// $(".contentt").append("<br>maxScroll: " + $("body").height() + "x" + $(window).height() );

@@ -12,8 +12,26 @@ html {
     min-height: 100%;
 }
 
+.twitter-embed {
+display: grid;
+padding-top: 20px;
+grid-template-columns: auto auto;
+}
 
-
+.twitter-embed .grid-element {
+    width: 37vw;
+    margin: 1rem auto 0;
+}
+@media only screen and (max-width:570px) {
+.twitter-embed {
+    display: block;
+    }
+    
+    .twitter-embed .grid-element {
+        width: 100%;
+        margin: 2rem auto 0;
+    }
+}
 body .container {
     position: relative;
     z-index: 1;
@@ -93,6 +111,7 @@ html body .container .pool p {
     grid-template-columns: auto auto auto;    
     grid-template-rows: auto auto;
     grid-template-areas: '. area .''. area .';
+    z-index: 10;
 }
 
 
@@ -138,6 +157,7 @@ html body .container .pool p {
     transition-duration: 0.8s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    outline: 0;
 }
 
 .nav .nav-left a:hover, .nav-right a:hover {
@@ -153,6 +173,7 @@ html body .container .pool p {
     transition-duration: 0.8s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    outline: 0;
 }
 
 .el1 {
@@ -194,6 +215,7 @@ html body .container .pool p {
     transition-property: all;
     transition-duration: 1s;
     transition-timing-function: ease;
+    outline: 0;
     transition-delay: 0s;
 }
 
@@ -269,6 +291,7 @@ footer .tag {
     text-align: center;
     position: relative;  
     padding: 1rem 0 0 0;
+    outline: 0;
 }
 
 footer .tag:hover {
@@ -281,6 +304,7 @@ footer .tag:hover {
     transition-duration: 0.8s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    outline: 0;
 }
 
 
@@ -331,12 +355,14 @@ footer .tag:hover {
     font-family: 'Cinzel', serif;
     color: white;
     display: block;
+    outline: 0;
     transition: 0.3s;
   }
 
   .overlay-left a:hover, .overlay-left a:focus, .overlay-r a:hover, .overlay-r a:focus {
     color: #000000;
     font-size: 300%;
+    outline: 0;
   }
 
   .overlay-left .closebtn, .overlay-r .closebtn {
@@ -348,10 +374,11 @@ footer .tag:hover {
  
 
   @media screen and (max-height: 450px) {
-    .overlay-left a, .overlay-r a {font-size: 1.2rem}
+    .overlay-left a, .overlay-r a {font-size: 1.2rem; outline: 0;}
 
     .overlay-left a:hover, .overlay-left a:focus, .overlay-r a:hover, .overlay-r a:focus {
-        font-size: 200%
+        font-size: 200%;
+        outline: 0;
     }
     .overlay-r .closebtn, .overlay-left .closebtn {
     font-size: 3rem;
