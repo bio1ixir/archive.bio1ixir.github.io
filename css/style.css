@@ -19,17 +19,17 @@ grid-template-columns: auto auto;
 }
 
 .twitter-embed .grid-element {
-    width: 37vw;
+    width: 30vw;
     margin: 1rem auto 0;
 }
-@media only screen and (max-width:570px) {
+@media only screen and (max-width:719px) {
 .twitter-embed {
     display: block;
     }
     
     .twitter-embed .grid-element {
         width: 100%;
-        margin: 2rem auto 0;
+        margin: 2rem auto 10px;
     }
 }
 body .container {
