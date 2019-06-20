@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+/* from bio1ixir-blog-theme */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
 *, html, body {
     box-sizing: border-box;
 }
@@ -12,6 +17,15 @@ html {
     min-height: 100%;
 }
 
+.twitter-embed .grid-element-type2 blockquote {
+    border: hidden;
+    box-shadow: 0 0 5px black;
+    border-width: 0px;
+    width: 30vw;
+    margin: 1rem auto 0;
+    word-wrap: break-word;
+
+}
 .twitter-embed {
 display: grid;
 padding-top: 20px;
@@ -22,7 +36,14 @@ grid-template-columns: auto auto;
     width: 30vw;
     margin: 1rem auto 0;
 }
+
 @media only screen and (max-width:719px) {
+    .twitter-embed .grid-element-type2 blockquote {
+        border: solid;
+        border-width: 0.5px;
+        width: 100%;
+        margin: 2rem auto 10px;
+    }
 .twitter-embed {
     display: block;
     }
@@ -248,7 +269,7 @@ html body .container .pool p {
     padding: 60px;
 }
 
-body .team {
+body .contact {
     width: 85rem;
     margin: -1rem auto 100px auto;
     z-index: -1;

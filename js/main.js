@@ -11,7 +11,16 @@ $(function() {
         'transition-duration': '0.3s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
-
+        
+        
+        $('.contact').css({
+          'width': mass,
+          'padding': '3rem 30px',
+          'transition-property': 'all',
+          'transition-duration': '0.3s',
+          'transition-timing-function': 'ease',
+          'transition-delay': '0s'});
+  
 
           if ($(window).width() <= 600) {
             $('.el4').css({
@@ -62,6 +71,14 @@ $(function() {
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
 
+        $('.contact').css({'width': mass,
+        'padding': '3rem 30px',
+        'transition-property': 'all',
+        'transition-duration': '0.3s',
+        'padding': '1.4rem 1.5rem',
+        'transition-timing-function': 'ease',
+        'transition-delay': '0s'});
+
         $('.el4').css({
           'font-size': '2rem', 
           'line-height': '0rem', 
@@ -101,6 +118,8 @@ $(function() {
       }
       $('.container').css({'width': '93%'});
 
+      $('.contact').css({'width': '93%'});
+
       $('.nav-s').css(
         {'display': 'none'}
       );
@@ -123,6 +142,8 @@ $(function() {
     }
 
       $('.container').css({'width': '85%'});
+
+      $('.contact').css({'width': '85%'});
 
       $('.nav-s').css(
         {'display': 'none'}
@@ -149,6 +170,9 @@ $(function() {
     }
 
       $('.container').css({'width': '85rem'});
+
+      $('.contact').css({'width': '85rem'})
+
 
       $('.nav-s').css(
         {'display': 'none'}
