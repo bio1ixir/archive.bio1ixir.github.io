@@ -110,7 +110,7 @@ $(function() {
     }
 
     if ($(window).width() <= 1076 && $(window).width() > 776) {
-      if ($(window).scrollTop() > 0) {
+      if ($(window).scrollTop() > 0.5) {
         $('.el4').css({'font-size': '2rem', 'line-height': '2rem', 'padding': '13px'});
       }
       else {
@@ -134,7 +134,7 @@ $(function() {
       );
     }
    if ($(window).width() <= 1586  && $(window).width() > 1076) {
-    if ($(window).scrollTop() > 0) {
+    if ($(window).scrollTop() > 0.5) {
       $('.el4').css({'font-size': '2.2rem', 'line-height': '2.2rem', 'padding': '5px'});
     }
     else {
@@ -162,7 +162,7 @@ $(function() {
     }
    if ($(window).width() > 1586) {
 
-    if ($(window).scrollTop() > 0) {
+    if ($(window).scrollTop() > 0.5) {
       $('.el4').css({'font-size': '2.9rem', 'line-height': '3rem', 'padding': '10px'});
     }
     else {

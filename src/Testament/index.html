@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testament</title>
+    <link rel="stylesheet" href="../../css/style.css"> 
+    <link rel="stylesheet" media="screen and (max-width:1586px)" href="../../css/mq1.css"> 
+    <link rel="stylesheet" media="screen and (max-width:1076px)" href="../../css/mq2.css"> 
+    <link rel="stylesheet" media="screen and (max-width:776px)" href="../../css/mq3.css"> 
+    <link rel="stylesheet" media="screen and (max-width:754px)" href="../../css/mq4.css"> 
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
+.article-info {
+    display: grid;
+    padding: 20px 0 10px 0;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto; 
+}
+
+.container .main-content .title {
+        font-family: 'Fondamento', cursive;
+        font-size: 4.7rem;
+        padding: 70px 0px 0 0;
+        word-wrap: break-word;
+    }
+.container .content {
+    font-size: 1.4rem;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 30px 3vw;
+    line-height: 2rem;
+}
+.pub-date, .eta, .author {
+    font-size: 1.4rem; 
+    font-family: 'Nixie One', cursive;
+    font-weight: 600;
+    line-height: 2rem;
+    color:rgba(64, 4, 82, 0.541);
+    padding: 0px 0px 0 10px;
+}
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2rem;
+    color: rgb(145, 25, 139);
+}
+.content a {
+    text-decoration: none;
+    color:rgb(199, 62, 158);
+    outline: 0;
+}
+.content a:hover {
+    text-decoration: underline;
+    outline: 0;
+}
+.icon {
+    display: inline-block;
+    stroke: currentColor;
+    fill: none;
+    position: relative;
+    top: 0px;
+    height: 1rem;
+    width: 1rem;
+}
+@media only screen and (max-width:1076px) {
+    .container .content {
+    font-size: 1.4rem;
+    padding: 0 2vw;
+    line-height: 1.8rem;
+    }
+}
+@media only screen and (max-width:776px) {
+    .container .content {
+        font-size: 1.4rem;
+        padding: 0 2vw;
+        line-height: 1.8rem;
+    }
+    .container .main-content .title {
+        font-size: 4.4rem;
+    }
+}
+@media only screen and (max-width:667px) {
+    .article-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    }
+    .container .main-content .title {font-size: 10vw}
+}
+@media only screen and (max-width:476px) {
+    .container .content {
+    font-size: 1.2rem;
+    padding: 0 0vw;
+    line-height: 1.7rem;
+    }
+    .pub-date, .eta, .author {
+    font-size: 1rem; 
+    font-family: 'Nixie One', cursive;
+    font-weight: 600;
+    }
+    .container .main-content .title {font-size: 2.6rem}
+}
+.content img {
+    width: 100%;
+    height: auto;
+}
+</style>
+
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../../css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <div id="nav-l" class="overlay-left">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNavl()">&times;</a>
+            <div class="overlay-content">
+              <a href="https://bio1ixir.github.io/blog/">Blog</a>
+              <a href="https://bio1ixir.github.io/src/projects/">Projects</a>
+              <a href="https://bio1ixir.github.io/src/feeds/">Feeds</a>
+            </div>
+          </div>
+
+          <div id="nav-r" class="overlay-r">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavr()">&times;</a>
+                <div class="overlay-content">
+                  <a href="https://bio1ixir.github.io/src/team/">Team</a>
+                  <a href="https://bio1ixir.github.io/src/tetaments/">Testament</a>
+                  <a href="#">Contacts</a>
+                </div>
+              </div>
+
+<div class="container animated fadeInDown delay-0s"> 
+    <div class="nav">
+        <div class="nav-left">
+            <div class="el1"><a href="https://bio1ixir.github.io/blog/">Blog</a></div>
+            <div class="el2"><a href="https://bio1ixir.github.io/src/projects/">Projects</a></div>
+            <div class="el3"><a href="https://bio1ixir.github.io/src/feeds/">Feeds</a></div> 
+        </div> 
+
+        <div class="nav-s animated bounceInRight delay-0s">
+            <div></div>
+            <div><span style="font-size:20px;cursor:pointer" onclick="openNavl()"><i class="fa fa-align-left" area-hidden="true"></i></span></div>
+            <div></div>    
+        </div>
+
+        <div class="nav-center">
+        <div class="el4"><a class="button" href="https://bio1ixir.github.io/">Bio1ixir</a></div> 
+        </div>
+
+        <div class="nav-s animated bounceInLeft delay-0s">
+                <div></div> 
+                <div></div> 
+                <div><span style="font-size:20px;cursor:pointer" onclick="openNavr()"><i class="fa fa-align-right" area-hidden="true"></i></span></div>
+        </div>
+
+        <div class="nav-right">
+            <div class="el5"><a href="https://bio1ixir.github.io/src/team/">Team</a></div>
+            <div class="el6"><a href="https://bio1ixir.github.io/src/Testament/">Testament</a></div>
+            <div class="el7"><a href="#">Contact</a></div> 
+        </div> 
+    </div>
+        <div class="main-content">
+            
+    <div class="title">Testament </div>
+<hr>
+    <div class="content">
+
+<p>Gazillion thoughts are oozing out from all over my mind since the idea of establishing biotech club in the institute has hit me like a truck. Frankly it all started as an experiment. Yet I&rsquo;m not certain about how I&rsquo;m gonna drive it. May the <a href="https://en.wikipedia.org/wiki/Will_to_power">will of power</a> prevail!</p>
+
+<p>So as the Executive Head of Bio1ixir, I would like to take the privilege of putting our Code of Ethics and Standards in the hope that it will project a clear view of our ideology with which the underpinning of this club was made.</p>
+
+<h1 id="code-of-ethics-and-standards">Code of Ethics and Standards.</h1>
+
+<h3 id="our-goal">Our Goal</h3>
+
+<p>In our institute- IIT Jodhpur, Student&rsquo;s Gymkhana and sometimes Bioscience and Bioengineering department organises maryiad talks by really great technology and entrepreneurial personalities. And one thing common in most of them is the intellectual distance between the audience and the speaker. Just to tell you, in all these talks, that were organised for <em>all students</em> on paper, but only first yearites are made (often forcefully) to fill the seats. Concepts like Data Clustering, Statistical Models are fed to the students who had been doing problems of linear programming 3 months ago; or attacked by complex names of mutagens and chemicals when they weren&rsquo;t even gotten over Benedict, Hoffmann, Fischer Killiani and whatnot!  Obviously they won&rsquo;t understand most of it if not all those things. We aim to abridge this intellectual distance between the audience and speaker by delivering the information that we have accrual overtime about the subject in order to prepare them for participating in the discussion with the speaker over high tea after such talks.</p>
+
+<h2 id="general-ethics">General Ethics</h2>
+
+<h3 id="be-respectful">Be respectful</h3>
+
+<p>Despite of its small size, inevitably there will be people wit whom you may disagree, or find it difficult to cooperate. Accept that, but even so, remain respectful. Disagreement is no excuse for poor behaviour or personal attacks, and a community in which people feel threatened is not a healthy community.</p>
+
+<h3 id="assume-good-faith">Assume good faith</h3>
+
+<p>Bio1ixir contributors have many ways of reaching our common goal of reducing intellectual distance of its followers and contemporary works in Biotechnology. And their way may differ from your ways. Assume that other people are working towards this goal.</p>
+
+<blockquote>
+<p>Note that our followers may have different levels of knowledge in biology. Our goal is to cut down their intellectual gap. So consider this while making content that you inadvertently don&rsquo;t add more to their sufferings. At the same time, make sure you don&rsquo;t oversimplify anything that it completely loses its meaning.</p>
+</blockquote>
+
+<h3 id="be-collaborative">Be collaborative</h3>
+
+<p>The project has just set sail. The code is clean and comprehensible even if you have basic knowledge of web development and designing. But if you still feel uneasy while studying the repositories and want to collaborate on github, I encourage you to ask for help when you need it. Similarly, offers for help should be seen in the context of our shared goal of improving Bio1ixir.</p>
+
+<p>When you make something for the benefit of the project, be willing to explain to others how it works, so that they can build on your work to make it even better.</p>
+
+<h4 id="guidelines-for-collaboration">Guidelines for collaboration</h4>
+
+<p>Check links at the bottom.</p>
+
+<h3 id="try-to-be-concise">Try to be concise</h3>
+
+<p>Keep in mind that what you write once will be read by hundreds of persons (hopefully). Writing a short email means people can understand the conversation as efficiently as possible. When a long explanation is necessary, consider adding a summary.</p>
+
+<p>Try to bring new arguments to a conversation so that each mail adds something unique to the thread, keeping in mind that the rest of the thread still contains the other messages with arguments that have already been made.</p>
+
+<p>Try to stay on topic, especially in discussions that are already fairly large.</p>
+
+<h3 id="be-open">Be open</h3>
+
+<p>Most ways of communication used within the club allow for public and private communication. You should preferably use public methods of communication for club-related messages/announcements, unless posting something sensitive.</p>
+
+<p>This applies to messages for help or Bio1ixir-related support, too; not only is a public support request much more likely to result in an answer to your question, it also makes sure that any inadvertent mistakes made by people answering your question will be more easily detected and corrected.</p>
+
+<h3 id="be-authentic">Be Authentic</h3>
+
+<p>We are a community in science. Sharing authentic information should be our utmost concern. Subtulism is not an option.</p>
+
+<p>While stating some dynamic stats in your post, that are subjected to changes with time, you must clearly mention the date/year till which the stats held truth. Moderation team will take care that every post with dynamic stats should stand this condition.</p>
+
+<h3 id="in-case-of-problems">In case of problems</h3>
+
+<p>While this code of conduct should be adhered to by participants, we recognize that sometimes people may have a bad day, or be unaware of some of the guidelines in this code of conduct. When that happens, you may reply to them and point out this code of conduct. Such messages may be in public or in private, whatever is most appropriate. However,       regardless of whether the message is public or not, it should still adhere to the relevant parts of this code of conduct; in particular, it should not be abusive or disrespectful. Assume good faith; it is more likely that participants are unaware of their bad behaviour than that they intentionally try to degrade the quality of the discussion.</p>
+
+<h3 id="anti-plagiarism-policy">Anti plagiarism policy</h3>
+
+<p>We consider plagiarism an academic dishonesty and a breach of journalistic ethics. Any kind of content theft and plagiarism is highly condemnable.  We encourage all contributors to respect others <a href="https://en.wikipedia.org/wiki/Intellectual_property">Intellectual Property</a>. And for some reason if you feel necessity to copy someone&rsquo;s work, you are advised to well quote it within quotes (alternatively make it under code section.) and give the courtesy to the author alongside.</p>
+
+<p>If our moderation team finds out any signs of plagiarism, you post shall be updated with due courtesy and removal of your name from the <em>Author</em> tag. Not only this, you&rsquo;ll be blacklisted from posting on Bio1ixir if felt necessary.</p>
+
+<h3 id="how-to-report">How to report</h3>
+
+<blockquote>
+<p>Any kind of report can directly be reported at bio1ixir.iitj@gmail.com - or alternatively you can report concerning bodies instead.</p>
+</blockquote>
+
+<p><strong>Report a Bug:</strong> If you find a bug in any service provided by Bio1ixir, report it to the concerning repository of our <a href="https://github.com/bio1ixir">organisation</a> on github. Please follow the Issue template (if provided) while reporting. It&rsquo;ll help the developer to access it easily.</p>
+
+<p><strong>Report Plagiarism:</strong> If you as a reader find that the some author has violated our anti-plagiarism policy (please read that before reporting) then Functional Manager for affairs related to plagiarism can be reported.</p>
+
+<p><strong>Report Incorrect Information:</strong> If you spot some inauthentic information in some post, Functional Manager for content moderation can be reported.</p>
+
+<h3 id="word-of-advise">Word of Advise</h3>
+
+<p>What should you actually do while you&rsquo;re at Bio1ixir to make the best use of your time here?</p>
+
+<p>Class of 2022 being the senior most batch of the department in UG program, they are expected to follow self-directive scheme. That means you won&rsquo;t have someone telling you what to do, what to learn, etc, while you are here. Rather you should be the one guiding your juniors about how to get in flow. And same is expected from the successors. Although we will have scientific discourse sessions with a followed curricula (yet to be planned) but thanks to the way we&rsquo;ve been trained in last two semesters, I believe we learn best when given the freedom to explore what most interest us. Having said that, I encourage everyone to give yourself a go and teach yourself. With self- discipline. I understand it makes it easy to misunderstand the freedom with inactivity. No. Bio1ixir is not a vacuum. Just that being an IITian, you&rsquo;re expected to put extra efforts in whatever work you do. Guess we IITians are cursed by this <a href="http://sinisterlight.com/blog/2014/12/08/the-vicious-circle/">viscious circle</a>.</p>
+
+<p>As for juniors, make the best out of the efforts and time that your seniors are putting into this club (only if they put :P). Down the line the legacy of this club is going to be passed on to some among you only. Prepare yourself for the roles. With time you&rsquo;ll get to know the area of expertise of your seniors so that you can approach them for enhanced exposure.</p>
+
+<p>Talking of our team, I have planned an organisational structure for an efficient task allocation and to maintain a systematic flow of power and duties so that no project has to compete for limited resources and priority. As of now, almost all tasks are carried out by me only. But I will recruit the core team as soon as possible.</p>
+
+<p>So, that&rsquo;s that. If these requirements made your head spin a bit- well, that&rsquo;s the cost of working with me at Bio1ixir. Otherwise we have to kiss our teamwork good bey. No exceptions!</p>
+
+<p>As I said, we are just going to set sail. There is a lot yet to learn. No doubt that with subliming time, our believes are going to be challenged, they are going to be forced to change. And so shall the conducts of this club!</p>
+
+<p><br>Credit to <a href="https://www.debian.org/code_of_conduct">Debian&rsquo;s Code of Cunduct</a> from which I’ve extensively borrowed, with general thanks to <a href="https://adainitiative.org/2014/02/howto-design-a-code-of-conduct-for-your-community/">the Ada Initiative’s “how to design a code of conduct for your community.”</a></p>
+
+<hr />
+
+<p>With a smile,<br><br>
+Archit Dwivedi<br>
+Executive Head.</p>
+</div>
+    <hr><br>
+
+        </div>
+
+    </div>
+    <div class="contact animated fadeInUp delay-1s">
+
+
+
+
+    </div>
+    <footer class="animated fadeInup delay-0s">
+        <p class="footer-text">© 2019 Bio1ixir - IIT Jodhpur</p>
+        <p class="footer-text"><i class="fa fa-code" area-hidden="true"></i> with <i class="em em-brain"></i> by<br>
+        <a class="tag underline-magical" href="https://github.com/evi1haxor/">evi1haxor</a></p>
+    </footer>
+    </body>
+    
+    
+    <script type="text/javascript" src="../../js/main.js"></script>
+    
+</html>
