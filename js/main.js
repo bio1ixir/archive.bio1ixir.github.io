@@ -47,7 +47,7 @@ $(function() {
           {'display': 'grid',
           'grid-template-columns': 'auto auto auto',
           'transition-property': 'all',
-          'transition-duration': '0.3s',
+          'transition-duration': '0.2s',
           'transition-timing-function': 'ease',
           'transition-delay': '0s',
           'align-content': 'center'}
@@ -92,7 +92,7 @@ $(function() {
           {'display': 'grid',
           'grid-template-columns': 'auto auto auto',
           'transition-property': 'all',
-          'transition-duration': '0.3s',
+          'transition-duration': '0.2s',
           'transition-timing-function': 'ease',
           'transition-delay': '0s',
           'align-content': 'center'}

@@ -1,6 +1,6 @@
 @media only screen and (max-width:776px) {
     body .container {
-        width: 90%;
+        width: 100%;
     }
 
     .main-logo {
@@ -96,8 +96,8 @@
         padding: 0px;
     }
 
-    body .team {
-        width: 95%;
+    body .contact {
+        width: 100%;
         margin: -1rem auto 100px auto;
         z-index: -1;
         padding:3rem 30px;
