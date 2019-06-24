@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nixie+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
+/* For contact pane */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/*for feed*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 *, html, body {
     box-sizing: border-box;
 }
@@ -19,12 +23,20 @@ html {
 
 .twitter-embed .grid-element-type2 blockquote {
     border: hidden;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 0.4px rgba(121, 112, 112, 0.699);
     border-width: 0px;
     width: 30vw;
     margin: 1rem auto 0;
     word-wrap: break-word;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 1.8rem;
+    font-size: 1.3rem;
+}
 
+.twitter-embed .grid-element-type2 a {
+ text-decoration: none;
+ color:rgb(199, 62, 158);
+ outline: 0;
 }
 .twitter-embed {
 display: grid;
@@ -39,10 +51,8 @@ grid-template-columns: auto auto;
 
 @media only screen and (max-width:719px) {
     .twitter-embed .grid-element-type2 blockquote {
-        border: solid;
-        border-width: 0.5px;
         width: 100%;
-        margin: 2rem auto 10px;
+        margin-top: 2rem;
     }
 .twitter-embed {
     display: block;
@@ -270,16 +280,64 @@ html body .container .pool p {
 }
 
 body .contact {
+    background: #556270;
+    background: -webkit-linear-gradient(35deg, #d664a1, #6e48aa);  
+    background: linear-gradient(-125deg, #d369c1e0, #793892);
     width: 85rem;
     margin: -1rem auto 100px auto;
     z-index: -1;
     padding:3rem 30px;
-    border:1px solid #ccc;
-    background-color: white;
-    border-radius: 25px;
+    border:1px solid black;
+    border-radius: 0 0 25px 25px;
     box-shadow: 0px 0px 25px #181617;
+    display: flex;
+    flex-direction: row;
+
 }
 
+body .contact div {
+    width: 300px;
+    margin: 0px auto;
+}
+
+body .contact span {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 1.8px solid black;
+    padding-bottom: 9px;
+    color: white;
+}
+body .contact div ul {
+    font-family: 'Muli', serif;
+    list-style: none;
+    line-height: 27px;
+    font-size: 1rem;
+}
+
+body .contact a {
+    text-decoration: none;
+    color: rgb(228, 171, 233);
+}
+body .contact a:hover {
+    text-decoration: none;
+    color: rgb(250, 194, 255);
+}
+
+@media only screen and (max-width:930px) {
+    body .contact {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: '. ql''. ql'
+    }
+    body .contact div {
+        width: 42vw;
+    }
+    body .contact .ql {
+        grid-area: ql;
+    }
+}
 
 footer p {
     text-align: center;
