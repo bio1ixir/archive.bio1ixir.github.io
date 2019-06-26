@@ -75,7 +75,6 @@ $(function() {
         'padding': '3rem 30px',
         'transition-property': 'all',
         'transition-duration': '0.3s',
-        'padding': '1.4rem 1.5rem',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
 
