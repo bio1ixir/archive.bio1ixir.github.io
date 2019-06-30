@@ -2,7 +2,7 @@
 
     body .container {
         width: 85%;
-        margin:6rem auto 0;
+        margin:auto auto;
         padding:1.4rem 1.5rem;
     }
 
@@ -63,6 +63,7 @@
         transition-duration: 0.8s;
         transition-timing-function: ease;
         transition-delay: 0s;
+        outline: 0;
     }
 
 
@@ -112,7 +113,7 @@
         padding: 60px;
     }
 
-    body .team {
+    body .contact {
         width: 85%;
         margin: -1rem auto 100px auto;
         z-index: -1;

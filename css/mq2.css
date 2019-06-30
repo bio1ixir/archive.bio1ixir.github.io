@@ -66,7 +66,7 @@
     .nav-center {
         display: grid;
         grid-area: area;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
 
@@ -86,6 +86,7 @@
         transition-duration: 0.8s;
         transition-timing-function: ease;
         transition-delay: 0s;
+        outline: 0;
     }
 
 
@@ -135,8 +136,8 @@
         padding: 0px;
     }
 
-    body .team {
-        width: 85%;
+    body .contact {
+        width: 93%;
         margin: -1rem auto 100px auto;
         z-index: -1;
         padding:3rem 30px;
