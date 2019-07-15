@@ -5,7 +5,7 @@
 # Indian Institute of Technology Jodhpur based Student's Biotech Club
 An active and self-sustained group of students with interest in biotechnology and its interdisciplines
 ---
-
+```
 ├── css
 │   ├── animate.css
 │   ├── blog.css
@@ -98,5 +98,5 @@ An active and self-sustained group of students with interest in biotechnology an
     └── x.png
 
 12 directories, 78 files
-
+```
 
