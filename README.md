@@ -1,4 +1,7 @@
 # Bio1ixir
+
+<img src="https://camo.githubusercontent.com/8bd89d1ba2aca68b1c611acc37ec8b0e008d97fa/68747470733a2f2f636972636c6563692e636f6d2f67682f5265616c4f72616e67654f6e652f6875676f2d7468656d652d72657665616c6a732e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/RealOrangeOne/hugo-theme-revealjs.svg?style=svg" style="max-width:100%;">
+
 <img src="images/compact2.png" width="30%">                                 <img src="images/final10.png" width="40%"> 
 ---
 
