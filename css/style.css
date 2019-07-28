@@ -342,9 +342,10 @@ body .contact a:hover {
 }
 
 
-.contact li a:hover{
+body .contact li a:hover{
     background: rgb(128, 50, 131);
     border-radius: 9px;
+    color: whitesmoke;
 }
 
 
