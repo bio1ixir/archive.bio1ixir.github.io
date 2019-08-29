@@ -8,7 +8,7 @@ $(function() {
         'width': mass,
         'padding':'1rem 1.5rem',
         'transition-property': 'all',
-        'transition-duration': '0.3s',
+        'transition-duration': '0.1s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
         
@@ -17,7 +17,7 @@ $(function() {
           'width': mass,
           'padding': '3rem 30px',
           'transition-property': 'all',
-          'transition-duration': '0.3s',
+          'transition-duration': '0.1s',
           'transition-timing-function': 'ease',
           'transition-delay': '0s'});
   
@@ -66,7 +66,7 @@ $(function() {
         $('.container').css({'width': mass,
         'padding':'1rem 1.5rem',
         'transition-property': 'all',
-        'transition-duration': '0.3s',
+        'transition-duration': '0.1s',
         'padding': '1.4rem 1.5rem',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
@@ -74,7 +74,7 @@ $(function() {
         $('.contact').css({'width': mass,
         'padding': '3rem 30px',
         'transition-property': 'all',
-        'transition-duration': '0.3s',
+        'transition-duration': '0.1s',
         'transition-timing-function': 'ease',
         'transition-delay': '0s'});
 
