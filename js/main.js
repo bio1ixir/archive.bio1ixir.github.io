@@ -3,7 +3,7 @@ $(function() {
   $(window).scroll(function() {
     if ($(window).width() <= 776) {
       var mass = 100 + '%';
-      if ($(window).scrollTop() > 4) {
+      if ($(window).scrollTop() > 0.5) {
         $('.container').css({
         'width': mass,
         'padding':'1rem 1.5rem',
