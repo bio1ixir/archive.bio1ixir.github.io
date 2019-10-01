@@ -1,5 +1,14 @@
 <html lang="en">
 <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142575114-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142575114-1');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,6 +23,144 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Nixie+One&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
+        .article-info {
+            display: grid;
+            padding: 20px 0 10px 0;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto; 
+        }
+        
+        .container .main-content .title {
+                font-family: 'Fondamento', cursive;
+                font-size: 4.7rem;
+                padding: 70px 0px 0 0;
+                word-wrap: break-word;
+            }
+        .container .main-content {
+            font-size: 1.4rem;
+            font-family: 'Nanum Myeongjo', serif;
+            padding: 30px 3vw;
+            line-height: 2rem;
+        }
+        .pub-date, .eta, .author {
+            font-size: 1.4rem; 
+            font-family: 'Nixie One', cursive;
+            font-weight: 600;
+            line-height: 2rem;
+            color:rgba(64, 4, 82, 0.541);
+            padding: 0px 0px 0 10px;
+        }
+        pre code {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 1.2rem;
+            color: rgb(145, 25, 139);
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+        .main-content a {
+            text-decoration: none;
+            color:rgb(199, 62, 158);
+            outline: 0;
+        }
+        .main-content a:hover {
+            text-decoration: underline;
+            outline: 0;
+        }
+        .icon {
+            display: inline-block;
+            stroke: currentColor;
+            fill: none;
+            position: relative;
+            top: 0px;
+            height: 1rem;
+            width: 1rem;
+        }
+        .main-content img.a {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto auto;
+        }
+        .main-content img.b {
+            width: 75%;
+            height: auto;
+            display: block;
+            margin: auto auto;
+        }
+        .main-content img.c {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: auto auto;
+        }
+        .main-content img.d {
+            width: 25%;
+            height: auto;
+            display: block;
+            margin: auto auto;
+        }
+        @media only screen and (max-width:1076px) {
+            .container .main-content {
+            font-size: 1.4rem;
+            padding: 0 2vw;
+            line-height: 1.8rem;
+            }
+        }
+        @media only screen and (max-width:776px) {
+            .container .main-content {
+                font-size: 1.4rem;
+                padding: 0 2vw;
+                line-height: 1.8rem;
+            }
+            .container .main-content .title {
+                font-size: 4.4rem;
+            }
+        }
+        @media only screen and (max-width:667px) {
+            .article-info {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            }
+            .container .main-content .title {font-size: 10vw}
+        
+            .main-content img.a, .main-content img.b, .main-content img.c, .main-content img.d {
+            width: 100%;
+            height: auto;
+            }
+        }
+        @media only screen and (max-width:476px) {
+            .container .main-content {
+            font-size: 1.2rem;
+            padding: 0 0vw;
+            line-height: 1.7rem;
+            }
+            .pub-date, .eta, .author {
+            font-size: 1rem; 
+            font-family: 'Nixie One', cursive;
+            font-weight: 600;
+            }
+            .container .main-content .title {font-size: 2.6rem}
+        
+            .main-content img.a, .main-content img.b, .main-content img.c, .main-content img.d {
+            width: 100%;
+            height: auto;
+        
+            }
+        }
+        
+        
+        </style>
+            <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet"> 
+            <link rel="stylesheet" href="../../css/animate.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 
 
@@ -66,15 +213,36 @@
                 <div class="el7"><a href="#contacts">Contact</a></div> 
             </div> 
         </div>
+<div class="main-content">
+        <h1 id="website-theme-https-github-com-bio1ixir-bio1ixir-blog-theme"><a href="https://github.com/bio1ixir/bio1ixir-blog-theme">Website Theme</a></h1>
 
-
-Projects Page>
-
-
-
-        <div class="pseudo-padding">
-         
+        <p>Bio1ixir Blog is a static website generated using hugo in a hope that it&rsquo;ll make it easier for aspiring authors to post their creation without needing any knowledge of markup language and cascade styling. For this purpose, the theme which it uses is designed by <a href="https://github.com/evi1haxor">Archit Dwivedi</a> (<em>designing</em> counts- user interface, logo, colour schemes, fonts and template as a whole) and have been added as a submodule in the main blog repository.</p>
+        
+        <p><strong>Project Manager:</strong> <a href="https://github.com/evi1haxor">Archit Dwivedi</a></p>
+        
+        <hr>
+        
+        <h1 id="chato-https-github-com-bio1ixir-chato"><a href="https://github.com/bio1ixir/chato">Chato</a></h1>
+        
+        <p>Chatting service exclusively for BT heads of IIT Jodhpur, powered by django. Track the development at our GitHub organisation- <a href="https://github.com/bio1ixir/">bio1ixir</a></p>
+        
+        <p><strong>Project Manager:</strong> <a href="https://github.com/evi1haxor">Archit Dwivedi</a></p>
+        
+        <hr>
+        
+        <h1 id="atlas-https-github-com-bio1ixir-atlas"><a href="https://github.com/bio1ixir/Atlas">Atlas</a></h1>
+        
+        <p>Bio1ixir wiki repository aiming to serve a resource hub about the department affairs and beyond. Track the development at our GitHub organisation- <a href="https://github.com/bio1ixir/">bio1ixir</a></p>
+        
+        <p><strong>Project Manager:</strong> <a href="https://github.com/evi1haxor">Archit Dwivedi</a></p>
         </div>
+            <hr>
+        
+
+
+</div>
+
+
         <a name="contacts"></a>
     </div>
 
@@ -104,18 +272,13 @@ Projects Page>
                         </ul>
                     </div>
         
-                        <div><span class="get-involved">Get Involved</span>
-                            <ul>
-                                <li><a href="https://github.com/bio1ixir/">Contribute on GitHub</a></li>
-                                <li>Make request (as)
-                                    <ul>
-                                        <li><a href="mailto:bio1ixir@googlegroups.com">- A member</a></li>
-                                        <li><a href="mailto:bio1ixir.iitj@gmail.com">- An outsider</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="mailto:bio1ixir.iitj@gmail.com">Request Membership</a></li>
-                            </ul>
-                        </div>
+                    <div><span class="get-involved">Get Involved</span>
+                        <ul>
+                            <li><a href="https://github.com/bio1ixir/">Contribute on GitHub</a></li>
+                            <li><a href="mailto:bio1ixir.iitj@gmail.com">Seed & Suggest</a></li>
+                            <li><a href="mailto:bio1ixir.iitj@gmail.com">Request Membership</a></li>
+                        </ul>
+                    </div>    
             </div>
             </div>
         

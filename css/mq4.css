@@ -1,6 +1,6 @@
 @media only screen and (max-width:754px) {
     body .container {
-        width: 100%;
+        width: 90%;
         padding:5% 0 0 0rem;
         margin:20% auto 0;
    
@@ -53,13 +53,13 @@
     }
     .nav-s {
         display: grid;
-            grid-template-columns: auto auto auto;
-            transition-property: all;
-            transition-duration: 1s;
-            transition-timing-function: ease;
-            transition-delay: 0s;
-            align-content: center;
-  
+        grid-template-columns: auto auto auto;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        align-content: center;
+
     }
 
     .nav-left {

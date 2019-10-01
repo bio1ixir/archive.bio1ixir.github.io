@@ -148,6 +148,7 @@ html body .container .pool p {
 
 .nav-left {
     display: grid;
+    place-items: center;
     grid-template-columns: auto auto auto;
     padding: 10px;
     border: none;
@@ -160,6 +161,7 @@ html body .container .pool p {
 
 .nav-right {
     display: grid;
+    place-items: center;
     grid-template-columns: auto auto auto;
     padding: 10px;
     border: none;
