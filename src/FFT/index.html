@@ -26,46 +26,75 @@
 @import url('https://fonts.googleapis.com/css?family=Nixie+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
-.article-info {
-    display: grid;
-    padding: 20px 0 10px 0;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto; 
-}
-
-.container .main-content .title {
+.main-title {
         font-family: 'Fondamento', cursive;
         font-size: 4.7rem;
-        padding: 70px 0px 0 0;
+        padding: 70px 0px 25px 0;
         word-wrap: break-word;
     }
-.container .content {
-    font-size: 1.4rem;
-    font-family: 'Nanum Myeongjo', serif;
-    padding: 30px 3vw;
-    line-height: 2.2rem;
-}
-.pub-date, .eta, .author {
-    font-size: 1.4rem; 
-    font-family: 'Nixie One', cursive;
-    font-weight: 600;
-    line-height: 2.2rem;
-    color:rgba(64, 4, 82, 0.541);
-    padding: 0px 0px 0 10px;
-}
-pre code {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1.2rem;
-    color: rgb(145, 25, 139);
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-.content a {
+
+ .content a {
     text-decoration: none;
     color:rgb(199, 62, 158);
     outline: 0;
 }
-.content a:hover {
+
+.container .content {
+    font-size: 1.4rem;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 30px 3vw;
+    line-height: 2rem;
+}
+
+.container .title a {
+    font-family: 'Fondamento', cursive;
+    font-size: 2rem;
+    padding-top: 10px;
+    word-wrap: break-word;
+    color: rgb(199, 62, 158);
+    text-decoration: none;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    outline: 0;
+    }
+
+.container .title a:hover {
+    color: rgb(194, 62, 199);
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    outline: 0;
+}
+
+.container .overview {
+    font-size: 1.4rem;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 30px 3vw;
+    line-height: 2rem;
+}
+.pub-date, .eta, .author {
+    font-size: 1rem; 
+    font-family: 'Nixie One', cursive;
+    font-weight: 600;
+    line-height: 2rem;
+    color:rgba(64, 4, 82, 0.541);
+    padding: 0px 0px 0 10px;
+}
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2rem;
+    color: rgb(145, 25, 139);
+}
+.overview a {
+    text-decoration: none;
+    color:rgb(199, 62, 158);
+    outline: 0;
+}
+.overview a:hover {
     text-decoration: underline;
     outline: 0;
 }
@@ -78,45 +107,55 @@ pre code {
     height: 1rem;
     width: 1rem;
 }
-.content img.a {
-    width: 100%;
-    height: auto;
+.box {
+    border: none;
+    border-radius: 15px;
+    padding: 0px 20px 20px 20px;
+    margin: 2rem 2rem 2rem 2rem;
     display: block;
-    margin: auto auto;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
-.content img.b {
-    width: 75%;
-    height: auto;
-    display: block;
-    margin: auto auto;
-}
-.content img.c {
-    width: 50%;
-    height: auto;
-    display: block;
-    margin: auto auto;
-}
-.content img.d {
-    width: 25%;
-    height: auto;
-    display: block;
-    margin: auto auto;
-}
+.box:hover {
+    box-shadow: 0rem 0.6rem 1.8rem #66176d57;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    }
 @media only screen and (max-width:1076px) {
     .container .content {
     font-size: 1.4rem;
     padding: 0 2vw;
-    line-height: 1.9rem;
+    line-height: 1.8rem;
+    }
+
+    .main-title {
+        font-size: 4rem;
     }
 }
 @media only screen and (max-width:776px) {
     .container .content {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding: 0 2vw;
-        line-height: 1.9rem;
+        line-height: 1.8rem;
     }
-    .container .main-content .title {
-        font-size: 4.4rem;
+    .main-title {
+        font-size: 3.7rem;
+    }
+    .container .overview {
+        font-size: 1.2rem;
+        padding: 0 1.8vw;
+        line-height: 1.8rem;
+    }
+    .main-content .box {
+        margin: 0px 0 0 -15px;
+        padding-top: 0px;
+    }
+    .main-content .box:hover {
+    box-shadow: none;
     }
 }
 @media only screen and (max-width:667px) {
@@ -125,34 +164,40 @@ pre code {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     }
-    .container .main-content .title {font-size: 10vw}
 
-    .content img.a, .content img.b, .content img.c, .content img.d {
-    width: 100%;
-    height: auto;
+    .main-content .box {
+        margin: 0px 0 0 -25px;
+        padding-top: 25px;
     }
+
+    .main-content .box:hover {
+    box-shadow: none;
+    }
+
+    .main-title {font-size: 8vw}
 }
 @media only screen and (max-width:476px) {
     .container .content {
-    font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+    .container .overview {
+    font-size: 1rem;
     padding: 0 0vw;
-    line-height: 1.8rem;
+    line-height: 1.7rem;
     }
-    .pub-date, .eta, .author {
-    font-size: 1rem; 
-    font-family: 'Nixie One', cursive;
-    font-weight: 600;
+    .article-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     }
-    .container .main-content .title {font-size: 2.6rem}
-
-    .content img.a, .content img.b, .content img.c, .content img.d {
-    width: 100%;
-    height: auto;
-
+    .main-content .box {
+        margin: -23px;
+        padding-top: 0px;
+    }
+    .main-content .box:hover {
+    box-shadow: none;
     }
 }
-
-
 </style>
 
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet"> 
@@ -214,16 +259,15 @@ pre code {
     </div>
         <div class="main-content">
             
-    <div class="title">Food For Thought!</div>
-<hr>
+    <div class="main-title">Food For Thought!<hr></div>
     <div class="content">
 
-<h1><a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5mZWVkYnVybmVyLmNvbS9URURUYWxrc19hdWRpbw&episode=ZW4uYXVkaW8udGFsay50ZWQuY29tOjUwOTU5" target="_blank">[Podcast] The next software revolution: programming biological cells|Sara-Jane Dunn</a></h1>
+<div class="title"><a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5mZWVkYnVybmVyLmNvbS9URURUYWxrc19hdWRpbw&episode=ZW4uYXVkaW8udGFsay50ZWQuY29tOjUwOTU5" target="_blank">[Podcast] The next software revolution: programming biological cells|Sara-Jane Dunn</a></div class="title">
 <p>The cells in your body are like computer software: they're "programmed" to carry out specific functions at specific times. If we can better understand this process, we could unlock the ability to reprogram cells ourselves, says computational biologist Sara-Jane Dunn. In a talk from the cutting-edge of science, she explains how her team is studying embryonic stem cells to gain a new understanding of the biological programs that power life -- and develop "living software" that could transform medicine, agriculture and energy.</p>
 
 <hr>
 
-<h1 id="bee-found-his-honey-https-www-thoughtco-com-how-do-bees-make-honey-1968084"><a href="https://www.thoughtco.com/how-do-bees-make-honey-1968084" target="_blank">Bee found his honey!</a></h1>
+<div class="title" id="bee-found-his-honey-https-www-thoughtco-com-how-do-bees-make-honey-1968084"><a href="https://www.thoughtco.com/how-do-bees-make-honey-1968084" target="_blank">Bee found his honey!</a></div class="title">
 
 <p>Ever wondered how honeybees are able to turn flower nectar into honey? Here&rsquo;s a nice and informative post by Debble Hadley on <a href="https://www.thoughtco.com/" target="_blank">https://www.thoughtco.com/</a> - <em>&ldquo;How Bees Turn Flower Nectar Into Honey &ldquo;</em></p>
 
@@ -233,7 +277,7 @@ The post also talks about nutritious values of honey, bee species, nectar, etc.<
 <p>As a bioengineers, you may question the need of studying something like organisational structure of bee colonies. But I invite you to grasp the idea that in today&rsquo;s economy, bio-inspirational designing has immense potential. Innovation is difficult. And in order to have sustainable development of technology, bio-inspired designing is the way to go!<br />
 <hr></p>
 
-<h1 id="how-algae-guard-against-too-much-of-a-good-thing-https-elifesciences-org-digests-49577-how-algae-guard-against-too-much-of-a-good-thing"><a href="https://elifesciences.org/digests/49577/how-algae-guard-against-too-much-of-a-good-thing" target="_blank">How algae guard against too much of a good thing</a></h1>
+<div class="title" id="how-algae-guard-against-too-much-of-a-good-thing-https-elifesciences-org-digests-49577-how-algae-guard-against-too-much-of-a-good-thing"><a href="https://elifesciences.org/digests/49577/how-algae-guard-against-too-much-of-a-good-thing" target="_blank">How algae guard against too much of a good thing</a></div class="title">
 
 <p>In this article you&rsquo;ll read how Perlaza et al. designed an experiment to detect the triggering signal for protection and maintenance of chloroplast.</p>
 
