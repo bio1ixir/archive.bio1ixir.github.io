@@ -1,712 +1,752 @@
-  <!DOCTYPE html>
-  <html lang="en-us">
-  
-  <head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143268113-1"></script>
-      <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-  
-      gtag('config', 'UA-142575114-1');
-      </script>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Class of '22</title>
-      <link rel="stylesheet" href="/css/style.css"> 
-      <link rel="stylesheet" media="screen and (max-width:1586px)" href="/css/mq1.css"> 
-      <link rel="stylesheet" media="screen and (max-width:1076px)" href="/css/mq2.css"> 
-      <link rel="stylesheet" media="screen and (max-width:776px)" href="/css/mq3.css"> 
-      <link rel="stylesheet" media="screen and (max-width:754px)" href="/css/mq4.css"> 
-      
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Nixie+One&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
-  .article-info {
-      display: grid;
-      padding: 20px 0 10px 0;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto auto; 
-  }
-  
-  .main-title {
-          font-family: 'Fondamento', cursive;
-          font-size: 4.7rem;
-          padding: 70px 0px 0 0;
-          word-wrap: break-word;
-      }
-  
-  .container .content {
-      font-size: 1.4rem;
-      font-family: 'Nanum Myeongjo', serif;
-      padding: 30px 3vw;
-      line-height: 2rem;
-  }
-  
-  .container .box .title a {
-      font-family: 'Fondamento', cursive;
-      font-size: 2rem;
-      padding: 0;
-      word-wrap: break-word;
-      color: rgb(199, 62, 158);
-      text-decoration: none;
-      cursor: pointer;
-      transition-property: all;
-      transition-duration: 0.7s;
-      transition-timing-function: ease;
-      transition-delay: 0s;
-      outline: 0;
-      }
-  
-  .container .box .title a:hover {
-      color:  rgb(144, 62, 199);
-      transition-property: all;
-      transition-duration: 0.7s;
-      transition-timing-function: ease;
-      transition-delay: 0s;
-      outline: 0;
-  }
-  
-  .container .overview {
-      font-size: 1.4rem;
-      font-family: 'Nanum Myeongjo', serif;
-      padding: 30px 3vw;
-      line-height: 2rem;
-  }
-  .pub-date, .eta, .author {
-      font-size: 1rem; 
-      font-family: 'Nixie One', cursive;
-      font-weight: 600;
-      line-height: 2rem;
-      color:rgba(64, 4, 82, 0.541);
-      padding: 0px 0px 0 10px;
-  }
-  code {
-      font-family: 'Source Code Pro', monospace;
-      font-size: 1.2rem;
-      color: rgb(145, 25, 139);
-  }
-  .overview a {
-      text-decoration: none;
-      color:rgb(199, 62, 158);
-      outline: 0;
-  }
-  .overview a:hover {
-      text-decoration: underline;
-      outline: 0;
-  }
-  .icon {
-      display: inline-block;
-      stroke: currentColor;
-      fill: none;
-      position: relative;
-      top: 0px;
-      height: 1rem;
-      width: 1rem;
-  }
-  .box {
-      border: none;
-      border-radius: 15px;
-      padding: 0px 20px 20px 20px;
-      margin: 2rem 2rem 2rem 2rem;
-      display: block;
-      transition-property: all;
-      transition-duration: 0.7s;
-      transition-timing-function: ease;
-      transition-delay: 0s;
-  }
-  .box:hover {
-      box-shadow: 0rem 0.6rem 1.8rem #66176d57;
-      transition-property: all;
-      transition-duration: 0.7s;
-      transition-timing-function: ease;
-      transition-delay: 0s;
-      }
-  @media only screen and (max-width:1076px) {
-      .container .content {
-      font-size: 1.4rem;
-      padding: 0 2vw;
-      line-height: 1.8rem;
-      }
-  
-      .main-title {
-          font-size: 4rem;
-      }
-  }
-  @media only screen and (max-width:776px) {
-      .container .content {
-          font-size: 1.2rem;
-          padding: 0 2vw;
-          line-height: 1.8rem;
-      }
-      .main-title {
-          font-size: 3.7rem;
-      }
-      .container .overview {
-          font-size: 1.2rem;
-          padding: 0 1.8vw;
-          line-height: 1.8rem;
-      }
-      .main-content .box {
-          margin: 0px 0 0 -15px;
-          padding-top: 0px;
-      }
-      .main-content .box:hover {
-      box-shadow: none;
-      }
-  }
-  @media only screen and (max-width:667px) {
-      .article-info {
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
-      }
-  
-      .main-content .box {
-          margin: 0px 0 0 -25px;
-          padding-top: 25px;
-      }
-  
-      .main-content .box:hover {
-      box-shadow: none;
-      }
-  
-      .main-title {font-size: 8vw}
-  }
-  @media only screen and (max-width:476px) {
-      .container .content {
-          font-size: 1.1rem;
-      }
-      .container .overview {
-      font-size: 1rem;
-      padding: 0 0vw;
-      line-height: 1.7rem;
-      }
-      .article-info {
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
-      }
-      .main-content .box {
-          margin: -23px;
-          padding-top: 0px;
-      }
-      .main-content .box:hover {
-      box-shadow: none;
-      }
-  }
+<!DOCTYPE html>
+<html lang="en-us">
 
-   /* Three columns side by side */
-.column {
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 15px;
-  float:left;
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143268113-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142575114-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Archives</title>
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" media="screen and (max-width:1586px)" href="/css/mq1.css"> 
+    <link rel="stylesheet" media="screen and (max-width:1076px)" href="/css/mq2.css"> 
+    <link rel="stylesheet" media="screen and (max-width:776px)" href="/css/mq3.css"> 
+    <link rel="stylesheet" media="screen and (max-width:754px)" href="/css/mq4.css"> 
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
+.article-info {
+    display: grid;
+    padding: 20px 0 10px 0;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto; 
 }
 
+.main-title {
+        font-family: 'Fondamento', cursive;
+        font-size: 4.7rem;
+        padding: 70px 0px 0 0;
+        word-wrap: break-word;
+    }
+
+.container .content {
+    font-size: 1.4rem;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 30px 3vw;
+    line-height: 2rem;
+}
+
+.container .box .title a {
+    font-family: 'Fondamento', cursive;
+    font-size: 2rem;
+    padding: 0;
+    word-wrap: break-word;
+    color: rgb(199, 62, 158);
+    text-decoration: none;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    outline: 0;
+    }
+
+.container .box .title a:hover {
+    color:  rgb(144, 62, 199);
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    outline: 0;
+}
+
+.container .overview {
+    font-size: 1.4rem;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 30px 3vw;
+    line-height: 2rem;
+}
+.pub-date, .eta, .author {
+    font-size: 1rem; 
+    font-family: 'Nixie One', cursive;
+    font-weight: 600;
+    line-height: 2rem;
+    color:rgba(64, 4, 82, 0.541);
+    padding: 0px 0px 0 10px;
+}
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2rem;
+    color: rgb(145, 25, 139);
+}
+.overview a {
+    text-decoration: none;
+    color:rgb(199, 62, 158);
+    outline: 0;
+}
+.overview a:hover {
+    text-decoration: underline;
+    outline: 0;
+}
+.icon {
+    display: inline-block;
+    stroke: currentColor;
+    fill: none;
+    position: relative;
+    top: 0px;
+    height: 1rem;
+    width: 1rem;
+}
+.box {
+    border: none;
+    border-radius: 15px;
+    padding: 0px 20px 20px 20px;
+    margin: 2rem 2rem 2rem 2rem;
+    display: block;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.box:hover {
+    box-shadow: 0rem 0.6rem 1.8rem #66176d57;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    }
+@media only screen and (max-width:1076px) {
+    .container .content {
+    font-size: 1.4rem;
+    padding: 0 2vw;
+    line-height: 1.8rem;
+    }
+
+    .main-title {
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width:776px) {
+    .container .content {
+        font-size: 1.2rem;
+        padding: 0 2vw;
+        line-height: 1.8rem;
+    }
+    .main-title {
+        font-size: 3.7rem;
+    }
+    .container .overview {
+        font-size: 1.2rem;
+        padding: 0 1.8vw;
+        line-height: 1.8rem;
+    }
+    .main-content .box {
+        margin: 0px 0 0 -15px;
+        padding-top: 0px;
+    }
+    .main-content .box:hover {
+    box-shadow: none;
+    }
+}
+@media only screen and (max-width:667px) {
+    .article-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    }
+
+    .main-content .box {
+        margin: 0px 0 0 -25px;
+        padding-top: 25px;
+    }
+
+    .main-content .box:hover {
+    box-shadow: none;
+    }
+
+    .main-title {font-size: 8vw}
+}
+@media only screen and (max-width:476px) {
+    .container .content {
+        font-size: 1.1rem;
+    }
+    .container .overview {
+    font-size: 1rem;
+    padding: 0 0vw;
+    line-height: 1.7rem;
+    }
+    .article-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    }
+    .main-content .box {
+        margin: -23px;
+        padding-top: 0px;
+    }
+    .main-content .box:hover {
+    box-shadow: none;
+    }
+}
+
+ /* Three columns side by side */
+.column {
+width: 100%;
+margin-bottom: 16px;
+/* padding: 0 5px; */
+float:left;
+}
+.row {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  /* padding: 0px; */
+  grid-gap: 10px 10px;
+}
 /* Add some shadows to create a card effect */
 .card {
-  box-shadow: 0 0px 15px 1px rgba(56, 8, 189, 0.12);
-  border-radius: 40px;
-  line-height: 1.3rem;
-  font-size: 0.9rem;
-  font-family: 'Nanum Myeongjo', serif;  
+box-shadow: 0 0px 15px 1px rgba(56, 8, 189, 0.12);
+border-radius: 40px;
+line-height: 1.3rem;
+font-size: 0.9rem;
+font-family: 'Nanum Myeongjo', serif;  
 }
 
 .card:hover{
-  box-shadow: 0rem 0.6rem 1.8rem #66176d57;
-  transition-property: all;
-  transition-duration: 0.7s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
+box-shadow: 0rem 0.6rem 1.8rem #66176d57;
+transition-property: all;
+transition-duration: 0.7s;
+transition-timing-function: ease;
+transition-delay: 0s;
 }
 .card img {
-  float: left;
-  width: 40%;
-  padding-right: 10px;
+float: left;
+width: 40%;
+padding-right: 10px;
 }
 
 /* Some left and right padding inside the container */
 .team-container {
-  padding: 10px 0 0 0px;
+padding: 10px 0 0 0px;
 }
 
 .team-container h4 {
-  font-family: 'Fondamento', cursive;
+font-family: 'Fondamento', cursive;
 }
 /* Clear floats */
 .team-container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+content: "";
+clear: both;
+display: table;
 }
 
 .team-title {
-  color: grey;
+color: grey;
 }
 @media screen and (max-width: 865px) {
-  .column {
-    width: 100%;
-    padding: 0 0px;
-    display: block;
-  }
-  .team-container {
-  padding: 0.8px 0 0 0px;
-  }
-  .card img {
-    width: 20vw;
-  }
-  .card p {
-    padding: 0 0 0 10px;
-  }
+.column {
+  width: 100%;
+  padding: 0 0px;
+  display: block;
+}
+.row {
+  grid-template-columns: 50% 50%;
+  padding: 20px;
+}
+.team-container {
+padding: 0.8px 0 0 0px;
+}
+.card img {
+  width: 100%;
+  padding: 0;
+}
+.card p {
+  padding: 0 0 0 10px;
+}
+.card{
+  border-radius: 20px;
+}
+}
+
+@media screen and (max-width: 480px){
+.column {
+  width: 100%;
+  padding: 0 0px;
+  display: block;
+}
+.row {
+  grid-template-columns: auto;
+  padding: 20px;
+}
+.team-container {
+padding: 0.8px 0 0 0px;
+}
+.card img {
+  width: 100%;
+  padding: 0;
+}
+.card p {
+  padding: 0 0 0 10px;
+}
+.card{
+  border-radius: 20px;
+}
 }
 @media only screen and (max-width:1378px) and (min-width:865px) {
-  .column {
-    width: 50%;
-    display: block;
-  }
+/* .column {
+  width: 50%;
+  display: block;
+} */
+.row {
+  grid-template-columns: 50% 50%;
 }
-  </style>
-  
-      <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet"> 
-      <link rel="stylesheet" href="/css/animate.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  </head>
-  
-  
-  <body>
-      <div id="nav-l" class="overlay-left">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNavl()">&times;</a>
-              <div class="overlay-content">
-                <a href="https://bio1ixir.github.io/blog/">Blog</a>
-                <a href="https://bio1ixir.github.io/src/projects/">Projects</a>
-                <a href="https://bio1ixir.github.io/src/archives/">Archives</a>
-              </div>
+}
+</style>
+
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <div id="nav-l" class="overlay-left">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNavl()">&times;</a>
+            <div class="overlay-content">
+              <a href="https://bio1ixir.github.io/blog/">Blog</a>
+              <a href="https://bio1ixir.github.io/src/projects/">Projects</a>
+              <a href="https://bio1ixir.github.io/src/archives/">Archives</a>
             </div>
-  
-            <div id="nav-r" class="overlay-r">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNavr()">&times;</a>
-                  <div class="overlay-content">
-                    <a href="https://bio1ixir.github.io/src/FFT/">FFT</a>
-                    <a href="https://bio1ixir.github.io/src/Testament/">Testament</a>
-                    <a href="#contacts">Contact</a>
-                  </div>
+          </div>
+
+          <div id="nav-r" class="overlay-r">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavr()">&times;</a>
+                <div class="overlay-content">
+                  <a href="https://bio1ixir.github.io/src/FFT/">FFT</a>
+                  <a href="https://bio1ixir.github.io/src/Testament/">Testament</a>
+                  <a href="#contacts">Contact</a>
                 </div>
-  
-  <div class="container animated fadeInDown delay-0s"> 
-      <div class="nav">
-          <div class="nav-left">
-              <div class="el1"><a href="/">Blog</a></div>
-              <div class="el2"><a href="https://bio1ixir.github.io/src/projects/">Projects</a></div>
-              <div class="el3"><a href="https://bio1ixir.github.io/src/archives/">Archives</a></div> 
-          </div> 
-  
-          <div class="nav-s animated bounceInRight delay-0s">
-              <div></div>
-              <div><span style="font-size:20px;cursor:pointer" onclick="openNavl()"><i class="fa fa-align-left" area-hidden="true"></i></span></div>
-              <div></div>    
+              </div>
+
+<div class="container animated fadeInDown delay-0s"> 
+    <div class="nav">
+        <div class="nav-left">
+            <div class="el1"><a href="/">Blog</a></div>
+            <div class="el2"><a href="https://bio1ixir.github.io/src/projects/">Projects</a></div>
+            <div class="el3"><a href="https://bio1ixir.github.io/src/archives/">Archives</a></div> 
+        </div> 
+
+        <div class="nav-s animated bounceInRight delay-0s">
+            <div></div>
+            <div><span style="font-size:20px;cursor:pointer" onclick="openNavl()"><i class="fa fa-align-left" area-hidden="true"></i></span></div>
+            <div></div>    
+        </div>
+
+        <div class="nav-center">
+        <div class="el4"><a class="button" href="https://bio1ixir.github.io/">Bio1ixir</a></div> 
+        </div>
+
+        <div class="nav-s animated bounceInLeft delay-0s">
+                <div></div> 
+                <div></div> 
+                <div><span style="font-size:20px;cursor:pointer" onclick="openNavr()"><i class="fa fa-align-right" area-hidden="true"></i></span></div>
+        </div>
+
+        <div class="nav-right">
+            <div class="el5"><a href="https://bio1ixir.github.io/src/FFT/">FFT</a></div>
+            <div class="el6"><a href="https://bio1ixir.github.io/src/Testament/">Testament</a></div>
+            <div class="el7"><a href="#contacts">Contact</a></div> 
+        </div> 
+    </div>
+        <div class="main-content">
+
+
+          <div class="main-title">Class</div>
+          <hr>
+      
+          <div class="content">
+              <p>BSBE-IITJ Class of '22.</p>        
           </div>
-  
-          <div class="nav-center">
-          <div class="el4"><a class="button" href="https://bio1ixir.github.io/">Bio1ixir</a></div> 
-          </div>
-  
-          <div class="nav-s animated bounceInLeft delay-0s">
-                  <div></div> 
-                  <div></div> 
-                  <div><span style="font-size:20px;cursor:pointer" onclick="openNavr()"><i class="fa fa-align-right" area-hidden="true"></i></span></div>
-          </div>
-  
-          <div class="nav-right">
-              <div class="el5"><a href="https://bio1ixir.github.io/src/FFT/">FFT</a></div>
-              <div class="el6"><a href="https://bio1ixir.github.io/src/Testament/">Testament</a></div>
-              <div class="el7"><a href="#contacts">Contact</a></div> 
-          </div> 
-      </div>
-          <div class="main-content">
-  
-  
-            <div class="main-title">Class</div>
-            <hr>
-        
-            <div class="content">
-                <p>BSBE-IITJ Class of '22.</p>        
+         
+         
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>AKASH GARG</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
             </div>
-           
-           
-            <div class="row">
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>AKASH GARG</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>AMAN PRATAP SINGH</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>ANKIT BHARDWAJ</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/batchmates/archit.jpg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>ARCHIT DWIVEDI</b></h4>
+                  <p><b>Interests:</b>Multi-view data analysis. And you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeF.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>ARUSHI MIDHA</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>ASHUTOSH SANODIA</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>BAI YASWANTH</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>CHINDAM SOURABH</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>CHITLURI RAKESH GUPTA</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeF.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>DIYA CHIRAG SANKHLA</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>HEMANT CHOUHAN</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
             
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>AMAN PRATAP SINGH</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeF.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>KHUSHI MULGE</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
             
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>ANKIT BHARDWAJ</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/batchmates/archit.jpg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>ARCHIT DWIVEDI</b></h4>
-                    <p><b>Interests:</b>Multi-view data analysis. And you.</p>
-                  </div>
-                </div> 
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeF.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>ARUSHI MIDHA</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>ASHUTOSH SANODIA</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>BAI YASWANTH</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>CHINDAM SOURABH</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>CHITLURI RAKESH GUPTA</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeF.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>DIYA CHIRAG SANKHLA</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>HEMANT CHOUHAN</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-              
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeF.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>KHUSHI MULGE</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-              
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeF.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>KOMALLA VENNELA</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>KSHITIJ THAKUR</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>MANAV GARG</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>                
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>MUKUL KUMAR BABRA</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>               
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>NEELANSH KALRA</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>              
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeF.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>NIDHI SHARMA</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>PIYUSH MATHUR</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>              
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>PRADYUMN VERMA</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>                
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>PRATHAM JALAL</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>               
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>PRATIK GOYAL</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>                 
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>PUSHPANK PRADEEP KATARE</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>               
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>RAJ KUMAR</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>               
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>RAJAT AJAY VINCHURKAR</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>                
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>RAKSHAM TIWARI</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>               
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>ROHIT KUMAR SAHU</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>                     
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>S VIJAY BHARGAV</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>  
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>SHANIT RAJESH NAGRE</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>                                     
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>SHIVANG KHANDELWAL</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>                 
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>TEJAS MAHESH KALE</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>               
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>VAIBHAV PAL</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>               
-              <div class="column">
-                <div class="card">
-                  <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                  <div class="team-container">
-                    <h4><b>VINAY RAJ</b></h4>
-                    <p><b>Interests:</b> Probably you.</p>
-                  </div>
-                </div> 
-              </div>            
-
-
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeF.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>KOMALLA VENNELA</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>KSHITIJ THAKUR</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>MANAV GARG</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>                
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>MUKUL KUMAR BABRA</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>NEELANSH KALRA</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>              
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeF.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>NIDHI SHARMA</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>PIYUSH MATHUR</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>              
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>PRADYUMN VERMA</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>                
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>PRATHAM JALAL</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>PRATIK GOYAL</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>                 
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>PUSHPANK PRADEEP KATARE</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>RAJ KUMAR</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>RAJAT AJAY VINCHURKAR</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>                
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>RAKSHAM TIWARI</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>ROHIT KUMAR SAHU</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>                     
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>S VIJAY BHARGAV</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>  
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>SHANIT RAJESH NAGRE</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>                                     
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>SHIVANG KHANDELWAL</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>                 
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>TEJAS MAHESH KALE</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>VAIBHAV PAL</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <h4><b>VINAY RAJ</b></h4>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
             </div>            
 
 
+          </div>            
 
-  
-          </div>
-          <a name="contacts"></a>
-  
-      </div>
-      
-      <div class="animated fadeInUp delay-1s">
-          <div class="contact">
-                  <div><span class="contacts">Contact</span>
-                      <ul>
-                              <li><a href="mailto:bio1ixir@googlegroups.com">Bio1ixir Google Group</a></li>
-                              <li><a href="mailto:bio1ixir.iitj@gmail.com">Executive Head</a></li>
-          
-                      </ul>
-                  </div>
-      
-                  <div class="ql"><span class="links">Quick Links</span>
-                      <ul>
-                          <li><a href="https://iitj.ac.in" target="_blank">IITJ website</a></li>
-                          <li><a href="http://iitj.ac.in/department/index.php?id=biology" target="_blank">BSBE Department</a></li>
-                          <li><a href="http://iitj.ac.in/academics/index.php?id=acad_program&&prog=46" target="_blank">Academia- IITJ</a></li>
-                          <li><a href="https://students.iitj.ac.in/" target="_blank">Students' Gymkhana- IITJ</a></li>
-                          <li><a href="http://iitj.ac.in/academics/index.php?id=academic_calendar" target="_blank">Academic Calendar</a></li>
-                          <li><a href="http://spc.iitj.ac.in/" target="_blank">Students' Placement Cell- IITJ</a></li>
-                          <li><a href="http://ir.iitj.ac.in:8080/jspui/" target="_blank">Institutional Repository</a></li>
-                          <li><a href="https://raw.githubusercontent.com/bio1ixir/resources/master/documents/bb.jpg" target="_blank">B.Tech. in Bioengineering</a></li>
-                          <li><a href="https://bio1ixir.github.io/src/Testament/" target="_blank">Testament- Executive Head</a></li>
-                          <li><a href="https://bio1ixir.github.io/src/contribute/" target="_blank">Contributors Manual</a></li>
-                          <li><a href="http://iitj.ac.in/footer/index.php?id=faq" target="_blank">FAQ- IITJ</a></li>
-                      </ul>
-                  </div>
-      
-                  <div><span class="get-involved">Get Involved</span>
-                      <ul>
-                          <li><a href="https://github.com/bio1ixir/" target="_blank">Contribute on GitHub</a></li>
-                          <li><a href="mailto:bio1ixir.iitj@gmail.com">Seed & Suggest</a></li>
-                          <li><a href="mailto:bio1ixir.iitj@gmail.com">Request Membership</a></li>
-                      </ul>
-                  </div>
-          </div>
-          </div>
-      
-      <footer class="animated fadeInup delay-0s">
-          <p class="footer-text">© 2020 Bio1ixir - IIT Jodhpur</p>
-          <p class="footer-text"><i class="fa fa-code" area-hidden="true"></i> with <i class="em em-brain"></i> by<br>
-          <a class="tag underline-magical" href="https://github.com/evi1haxor/" target="_blank">evi1haxor</a></p>
-      </footer>
-      </body>
-      
-      
-      <script type="text/javascript" src="/js/main.js"></script>
-      
-  </html>
-  
+
+
+
+        </div>
+        <a name="contacts"></a>
+
+    </div>
+    
+    <div class="animated fadeInUp delay-1s">
+        <div class="contact">
+                <div><span class="contacts">Contact</span>
+                    <ul>
+                            <li><a href="mailto:bio1ixir@googlegroups.com">Bio1ixir Google Group</a></li>
+                            <li><a href="mailto:bio1ixir.iitj@gmail.com">Executive Head</a></li>
+        
+                    </ul>
+                </div>
+    
+                <div class="ql"><span class="links">Quick Links</span>
+                    <ul>
+                        <li><a href="https://iitj.ac.in" target="_blank">IITJ website</a></li>
+                        <li><a href="http://iitj.ac.in/department/index.php?id=biology" target="_blank">BSBE Department</a></li>
+                        <li><a href="http://iitj.ac.in/academics/index.php?id=acad_program&&prog=46" target="_blank">Academia- IITJ</a></li>
+                        <li><a href="https://students.iitj.ac.in/" target="_blank">Students' Gymkhana- IITJ</a></li>
+                        <li><a href="http://iitj.ac.in/academics/index.php?id=academic_calendar" target="_blank">Academic Calendar</a></li>
+                        <li><a href="http://spc.iitj.ac.in/" target="_blank">Students' Placement Cell- IITJ</a></li>
+                        <li><a href="http://ir.iitj.ac.in:8080/jspui/" target="_blank">Institutional Repository</a></li>
+                        <li><a href="https://raw.githubusercontent.com/bio1ixir/resources/master/documents/bb.jpg" target="_blank">B.Tech. in Bioengineering</a></li>
+                        <li><a href="https://bio1ixir.github.io/src/Testament/" target="_blank">Testament- Executive Head</a></li>
+                        <li><a href="https://bio1ixir.github.io/src/contribute/" target="_blank">Contributors Manual</a></li>
+                        <li><a href="http://iitj.ac.in/footer/index.php?id=faq" target="_blank">FAQ- IITJ</a></li>
+                    </ul>
+                </div>
+    
+                <div><span class="get-involved">Get Involved</span>
+                    <ul>
+                        <li><a href="https://github.com/bio1ixir/" target="_blank">Contribute on GitHub</a></li>
+                        <li><a href="mailto:bio1ixir.iitj@gmail.com">Seed & Suggest</a></li>
+                        <li><a href="mailto:bio1ixir.iitj@gmail.com">Request Membership</a></li>
+                    </ul>
+                </div>
+        </div>
+        </div>
+    
+    <footer class="animated fadeInup delay-0s">
+        <p class="footer-text">© 2020 Bio1ixir - IIT Jodhpur</p>
+        <p class="footer-text"><i class="fa fa-code" area-hidden="true"></i> with <i class="em em-brain"></i> by<br>
+        <a class="tag underline-magical" href="https://github.com/evi1haxor/" target="_blank">evi1haxor</a></p>
+    </footer>
+    </body>
+    
+    
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+</html>
