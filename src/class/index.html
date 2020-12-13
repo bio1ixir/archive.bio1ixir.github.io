@@ -15,6 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Class '22</title>
     <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="/css/class.css"> 
     <link rel="stylesheet" media="screen and (max-width:1586px)" href="/css/mq1.css"> 
     <link rel="stylesheet" media="screen and (max-width:1076px)" href="/css/mq2.css"> 
     <link rel="stylesheet" media="screen and (max-width:776px)" href="/css/mq3.css"> 
@@ -200,117 +201,6 @@ code {
     }
 }
 
- /* Three columns side by side */
-.column {
-width: 100%;
-margin-bottom: 16px;
-/* padding: 0 5px; */
-float:left;
-}
-.row {
-  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  /* padding: 0px; */
-  grid-gap: 10px 10px;
-}
-/* Add some shadows to create a card effect */
-.card {
-box-shadow: 0 0px 15px 1px rgba(56, 8, 189, 0.12);
-border-radius: 40px;
-line-height: 1.3rem;
-font-size: 0.9rem;
-font-family: 'Nanum Myeongjo', serif;  
-}
-
-.card:hover{
-box-shadow: 0rem 0.6rem 1.8rem #66176d57;
-transition-property: all;
-transition-duration: 0.7s;
-transition-timing-function: ease;
-transition-delay: 0s;
-}
-.card img {
-float: left;
-width: 40%;
-padding-right: 10px;
-}
-
-/* Some left and right padding inside the container */
-.team-container {
-padding: 10px 0 0 0px;
-}
-
-.team-container h4 {
-font-family: 'Fondamento', cursive;
-}
-/* Clear floats */
-.team-container::after, .row::after {
-content: "";
-clear: both;
-display: table;
-}
-
-.team-title {
-color: grey;
-}
-@media screen and (max-width: 865px) {
-.column {
-  width: 100%;
-  padding: 0 0px;
-  display: block;
-}
-.row {
-  grid-template-columns: 50% 50%;
-  padding: 20px;
-}
-.team-container {
-padding: 0.8px 0 0 0px;
-}
-.card img {
-  width: 100%;
-  padding: 0;
-}
-.card p {
-  padding: 0 0 0 10px;
-}
-.card{
-  border-radius: 20px;
-}
-}
-
-@media screen and (max-width: 480px){
-.column {
-  width: 100%;
-  padding: 0 0px;
-  display: block;
-}
-.row {
-  grid-template-columns: auto;
-  padding: 20px;
-}
-.team-container {
-padding: 0.8px 0 0 0px;
-}
-.card img {
-  width: 100%;
-  padding: 0;
-}
-.card p {
-  padding: 0 0 0 10px;
-}
-.card{
-  border-radius: 20px;
-}
-}
-@media only screen and (max-width:1378px) and (min-width:865px) {
-/* .column {
-  width: 50%;
-  display: block;
-} */
-.row {
-  grid-template-columns: 50% 50%;
-}
-}
 </style>
 
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet"> 
@@ -386,7 +276,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>ADITYA KUMAR</b></h4>
+                  <div class="name-head"><b>ADITYA KUMAR</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -395,17 +285,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>AKASH GARG</b></h4>
-                  <p><b>Interests:</b> Probably you.</p>
-                </div>
-              </div> 
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="../../images/doggeM.jpeg" alt="Avatar" >
-                <div class="team-container">
-                  <h4><b>AMAN PRATAP SINGH</b></h4>
+                  <div class="name-head"><b>AKASH GARG</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -415,7 +295,17 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>ANKIT BHARDWAJ</b></h4>
+                  <div class="name-head"><b>AMAN PRATAP SINGH</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>ANKIT BHARDWAJ</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -425,7 +315,17 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/batchmates/archit2.jpg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>ARCHIT DWIVEDI</b></h4>
+                  <div class="name-head"><b>ARCHIT DWIVEDI</b><br></div>
+                  <div class="reach-out">
+                    <!-- style="padding: 0 0 15px 15px;" -->
+                    <div class="active">
+                      <a href="mailto:dwivedi.2@iitj.ac.in"><i class="fa fa-envelope-o active" aria-hidden="true"></i></a>
+                      <a href="https://www.linkedin.com/in/archit-dwivedi-7218b5162/"><i class="fa fa-linkedin active" aria-hidden="true"></i></a>
+                      <a href="https://www.instagram.com/evi1haxor/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      <a href="https://t.me/evi1haxor"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                      <a href="https://evi1haxor.github.io/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
                   <p><b>Interests:</b>Multi-view data analysis. And you.</p>
                 </div>
               </div> 
@@ -435,7 +335,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeF.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>ARUSHI MIDHA</b></h4>
+                  <div class="name-head"><b>ARUSHI MIDHA</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -445,7 +345,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>ASHUTOSH SANODIA</b></h4>
+                  <div class="name-head"><b>ASHUTOSH SANODIA</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -455,7 +355,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>BAI YASWANTH</b></h4>
+                  <div class="name-head"><b>BAI YASWANTH</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -465,7 +365,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>CHINDAM SOURABH</b></h4>
+                  <div class="name-head"><b>CHINDAM SOURABH</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -475,7 +375,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>CHITLURI RAKESH GUPTA</b></h4>
+                  <div class="name-head"><b>CHITLURI RAKESH GUPTA</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -485,7 +385,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeF.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>DIYA CHIRAG SANKHLA</b></h4>
+                  <div class="name-head"><b>DIYA CHIRAG SANKHLA</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -495,7 +395,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>HEMANT CHOUHAN</b></h4>
+                  <div class="name-head"><b>HEMANT CHOUHAN</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -505,7 +405,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeF.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>KHUSHI MULGE</b></h4>
+                  <div class="name-head"><b>KHUSHI MULGE</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -515,7 +415,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeF.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>KOMALLA VENNELA</b></h4>
+                  <div class="name-head"><b>KOMALLA VENNELA</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -524,7 +424,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>KSHITIJ THAKUR</b></h4>
+                  <div class="name-head"><b>KSHITIJ THAKUR</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -533,7 +433,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>MANAV GARG</b></h4>
+                  <div class="name-head"><b>MANAV GARG</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -542,7 +442,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>MUKUL KUMAR BABRA</b></h4>
+                  <div class="name-head"><b>MUKUL KUMAR BABRA</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -551,7 +451,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>NEELANSH KALRA</b></h4>
+                  <div class="name-head"><b>NEELANSH KALRA</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -560,7 +460,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeF.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>NIDHI SHARMA</b></h4>
+                  <div class="name-head"><b>NIDHI SHARMA</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -569,7 +469,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>PIYUSH MATHUR</b></h4>
+                  <div class="name-head"><b>PIYUSH MATHUR</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -578,7 +478,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>PRADYUMN VERMA</b></h4>
+                  <div class="name-head"><b>PRADYUMN VERMA</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -587,7 +487,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>PRATHAM JALAL</b></h4>
+                  <div class="name-head"><b>PRATHAM JALAL</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -596,7 +496,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>PRATIK GOYAL</b></h4>
+                  <div class="name-head"><b>PRATIK GOYAL</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -605,7 +505,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>PUSHPANK PRADEEP KATARE</b></h4>
+                  <div class="name-head"><b>PUSHPANK PRADEEP KATARE</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -614,7 +514,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>RAJ KUMAR</b></h4>
+                  <div class="name-head"><b>RAJ KUMAR</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -623,7 +523,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>RAJAT AJAY VINCHURKAR</b></h4>
+                  <div class="name-head"><b>RAJAT AJAY VINCHURKAR</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -632,7 +532,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>RAKSHAM TIWARI</b></h4>
+                  <div class="name-head"><b>RAKSHAM TIWARI</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -641,7 +541,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>ROHIT KUMAR SAHU</b></h4>
+                  <div class="name-head"><b>ROHIT KUMAR SAHU</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -650,7 +550,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>S VIJAY BHARGAV</b></h4>
+                  <div class="name-head"><b>S VIJAY BHARGAV</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -659,7 +559,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>SHANIT RAJESH NAGRE</b></h4>
+                  <div class="name-head"><b>SHANIT RAJESH NAGRE</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -668,7 +568,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>SHIVANG KHANDELWAL</b></h4>
+                  <div class="name-head"><b>SHIVANG KHANDELWAL</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -677,7 +577,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>TEJAS MAHESH KALE</b></h4>
+                  <div class="name-head"><b>TEJAS MAHESH KALE</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -686,7 +586,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>VAIBHAV PAL</b></h4>
+                  <div class="name-head"><b>VAIBHAV PAL</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
@@ -695,7 +595,7 @@ padding: 0.8px 0 0 0px;
               <div class="card">
                 <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <h4><b>VINAY RAJ</b></h4>
+                  <div class="name-head"><b>VINAY RAJ</b></div>
                   <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 

@@ -1,0 +1,131 @@
+/* CLASS CSS */
+.reach-out .active {
+    color:rgba(64, 4, 82, 0.63);
+    /* padding: 10px 0px 0 10px; */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    /* padding: 0 0px 5px 10px; */
+}
+.reach-out .active a{
+text-decoration: none;
+}
+ /* Three columns side by side */
+.column {
+width: 100%;
+margin-bottom: 16px;
+/* padding: 0 5px; */
+float:left;
+}
+.row {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  /* padding: 0px; */
+  grid-gap: 10px 10px;
+}
+/* Add some shadows to create a card effect */
+.card {
+box-shadow: 0 0px 15px 1px rgba(56, 8, 189, 0.12);
+border-radius: 0 40px 40px 0;
+line-height: 1.3rem;
+font-size: 0.9rem;
+font-family: 'Nanum Myeongjo', serif;  
+}
+
+.card:hover{
+box-shadow: 0rem 0.6rem 1.8rem #66176d57;
+transition-property: all;
+transition-duration: 0.7s;
+transition-timing-function: ease;
+transition-delay: 0s;
+}
+.card img {
+float: left;
+width: 40%;
+padding-right: 10px;
+}
+
+/* Some left and right padding inside the container */
+.team-container {
+padding: 0px 0 0 0px;
+}
+
+.team-container .name-head {
+font-family: 'Fondamento', cursive;
+padding-top: 0.5rem;
+padding-bottom: 4px;
+font-weight: 800;
+}
+/* Clear floats */
+.team-container::after, .row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.team-title {
+color: grey;
+}
+
+@media only screen and (max-width:1378px) and (min-width:865px) {
+/* .column {
+  width: 50%;
+  display: block;
+} */
+.row {
+  grid-template-columns: 50% 50%;
+}
+.card img {
+  padding: 0px 8px 0 0px;
+}
+}
+
+@media screen and (max-width: 865px) {
+.column {
+  width: 100%;
+  padding: 0 0px;
+  display: block;
+}
+.row {
+  grid-template-columns: 50% 50%;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  padding: 0px 0 0.3rem 0px;
+}
+.reach-out .active {
+padding-left: 0.5rem;
+}
+.team-container .name-head {
+padding-left: 0.2rem;
+}
+.card p {
+  padding: 0 0 0 7px;
+}
+.card{
+  border-radius: 0px 0px 20px 20px;
+}
+}
+
+@media screen and (max-width: 480px){
+.column {
+  width: 100%;
+  padding: 0 0px;
+  display: block;
+}
+.row {
+  grid-template-columns: auto;
+  padding: 20px;
+}
+.card img {
+  width: 100%;
+  padding: 0 0 0.1rem 0px;
+}
+.card p {
+  padding: 0 0 0 7px;
+}
+.card{
+  border-radius: 20px;
+}
+}
