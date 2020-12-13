@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143268113-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142575114-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Archives-Thinkathon20</title>
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" media="screen and (max-width:1586px)" href="/css/mq1.css"> 
+    <link rel="stylesheet" media="screen and (max-width:1076px)" href="/css/mq2.css"> 
+    <link rel="stylesheet" media="screen and (max-width:776px)" href="/css/mq3.css"> 
+    <link rel="stylesheet" media="screen and (max-width:754px)" href="/css/mq4.css"> 
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
+.article-info {
+    display: grid;
+    padding: 20px 0 10px 0;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto; 
+}
+
+.main-title {
+        font-family: 'Fondamento', cursive;
+        font-size: 4.7rem;
+        padding: 70px 0px 0 0;
+        word-wrap: break-word;
+    }
+
+.container .content {
+    font-size: 1.4rem;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 30px 3vw;
+    line-height: 2rem;
+}
+
+.container .box .title a {
+    font-family: 'Fondamento', cursive;
+    font-size: 2rem;
+    padding: 0;
+    word-wrap: break-word;
+    color: rgb(199, 62, 158);
+    text-decoration: none;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    outline: 0;
+    }
+
+.container .box .title a:hover {
+    color:  rgb(144, 62, 199);
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    outline: 0;
+}
+
+.container .overview {
+    font-size: 1.4rem;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 30px 3vw;
+    line-height: 2rem;
+}
+.pub-date, .eta, .author {
+    font-size: 1rem; 
+    font-family: 'Nixie One', cursive;
+    font-weight: 600;
+    line-height: 2rem;
+    color:rgba(64, 4, 82, 0.541);
+    padding: 0px 0px 0 10px;
+}
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2rem;
+    color: rgb(145, 25, 139);
+}
+.overview a {
+    text-decoration: none;
+    color:rgb(199, 62, 158);
+    outline: 0;
+}
+.overview a:hover {
+    text-decoration: underline;
+    outline: 0;
+}
+.icon {
+    display: inline-block;
+    stroke: currentColor;
+    fill: none;
+    position: relative;
+    top: 0px;
+    height: 1rem;
+    width: 1rem;
+}
+.box {
+    border: none;
+    border-radius: 15px;
+    padding: 0px 20px 20px 20px;
+    margin: 2rem 2rem 2rem 2rem;
+    display: block;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.box:hover {
+    box-shadow: 0rem 0.6rem 1.8rem #66176d57;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    }
+@media only screen and (max-width:1076px) {
+    .container .content {
+    font-size: 1.4rem;
+    padding: 0 2vw;
+    line-height: 1.8rem;
+    }
+
+    .main-title {
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width:776px) {
+    .container .content {
+        font-size: 1.2rem;
+        padding: 0 2vw;
+        line-height: 1.8rem;
+    }
+    .main-title {
+        font-size: 3.7rem;
+    }
+    .container .overview {
+        font-size: 1.2rem;
+        padding: 0 1.8vw;
+        line-height: 1.8rem;
+    }
+    .main-content .box {
+        margin: 0px 0 0 -15px;
+        padding-top: 0px;
+    }
+    .main-content .box:hover {
+    box-shadow: none;
+    }
+}
+@media only screen and (max-width:667px) {
+    .article-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    }
+
+    .main-content .box {
+        margin: 0px 0 0 -25px;
+        padding-top: 25px;
+    }
+
+    .main-content .box:hover {
+    box-shadow: none;
+    }
+
+    .main-title {font-size: 8vw}
+}
+@media only screen and (max-width:476px) {
+    .container .content {
+        font-size: 1.1rem;
+    }
+    .container .overview {
+    font-size: 1rem;
+    padding: 0 0vw;
+    line-height: 1.7rem;
+    }
+    .article-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    }
+    .main-content .box {
+        margin: -23px;
+        padding-top: 0px;
+    }
+    .main-content .box:hover {
+    box-shadow: none;
+    }
+}
+</style>
+
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <div id="nav-l" class="overlay-left">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNavl()">&times;</a>
+            <div class="overlay-content">
+              <a href="https://bio1ixir.github.io/src/class/">Class</a>
+              <a href="https://bio1ixir.github.io/src/projects/">Projects</a>
+              <a href="https://bio1ixir.github.io/src/archives/">Archives</a>
+            </div>
+          </div>
+
+          <div id="nav-r" class="overlay-r">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavr()">&times;</a>
+                <div class="overlay-content">
+                  <a href="https://bio1ixir.github.io/src/FFT/">FFT</a>
+                  <a href="https://bio1ixir.github.io/src/CoC/">CoC</a>
+                  <a href="#contacts">Contact</a>
+                </div>
+              </div>
+
+<div class="container animated fadeInDown delay-0s"> 
+    <div class="nav">
+        <div class="nav-left">
+            <div class="el1"><a href="https://bio1ixir.github.io/src/class/">Class</a></div>
+            <div class="el2"><a href="https://bio1ixir.github.io/src/projects/">Projects</a></div>
+            <div class="el3"><a href="https://bio1ixir.github.io/src/archives/">Archives</a></div> 
+        </div> 
+
+        <div class="nav-s animated bounceInRight delay-0s">
+            <div></div>
+            <div><span style="font-size:20px;cursor:pointer" onclick="openNavl()"><i class="fa fa-align-left" area-hidden="true"></i></span></div>
+            <div></div>    
+        </div>
+
+        <div class="nav-center">
+        <div class="el4"><a class="button" href="https://bio1ixir.github.io/">Bio1ixir</a></div> 
+        </div>
+
+        <div class="nav-s animated bounceInLeft delay-0s">
+                <div></div> 
+                <div></div> 
+                <div><span style="font-size:20px;cursor:pointer" onclick="openNavr()"><i class="fa fa-align-right" area-hidden="true"></i></span></div>
+        </div>
+
+        <div class="nav-right">
+            <div class="el5"><a href="https://bio1ixir.github.io/src/FFT/">FFT</a></div>
+            <div class="el6"><a href="https://bio1ixir.github.io/src/CoC/">CoC</a></div>
+            <div class="el7"><a href="#contacts">Contact</a></div> 
+        </div> 
+    </div>
+        <div class="main-content">
+
+
+    <div class="main-title">Thinkathon Archive</div>
+    <hr>
+
+    <div class="content">
+        
+            <p>If asked what Thinkathon is, I probably won't be able to tell you anything mind-boggling about it yet. Recently we had our second Thinkathon, even then many changes could be made to make its conduct more efficient than the last one, and the exercise more fun as a whole. So while it takes shape in the times to come, let me just describe it as a graded pitching competition organized among UG students of the department of BSBE, IIT Jodhpur, where students of the department at the end of each semester pitch their big biotech idea. The idea may include any concept or technology of any discipline on the face of the Earth (and beyond) with a must-have implementation of the knowledge gained from that semester's bioscience/bioengineering courses. But that's more for the sake of putting your question in the air of dignity. Consider this archive as the hand stencil of an event which is still young to be recognised, but has immense potential to be the iGem of sorts some day.</p>
+        <hr>
+    </div>
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/open?id=1NNx497j2RZSmuutDMKM5-QD4XW1hDyXE" target="_blank">Treatment of Sickle Cell Disease</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Nidhi Sharma</div>
+                </div>
+                <div class="overview">SCD is a form of anaemia which is caused due to single base substitution A-T (β6Glu→Val i.e. from glutamic acid to valine) in the first exon of the β-globin gene. The amino acid substitution in βS-globin leads to the formation of defective haemoglobin tetramers that polymerize upon deoxygenation and forms polymerized sickle haemoglobin (HbS, α2β2s), which affects the red blood cells’ biconcave shape and flexibility. Site-specific correction of sickle β-globin mutation in HSCs  can be advantageous over the complications of allogeneic HSC transplant. This method requires delivery of nuclease and repair template to achieve correction, hence avoids the risk of insertional oncogenesis as occurs with viral vectors, and also preserves the  globin regulatory mechanisms.....<a href="https://drive.google.com/open?id=1NNx497j2RZSmuutDMKM5-QD4XW1hDyXE" target="_blank">know more</a></div>
+                <hr>
+            </div><br>    
+
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/open?id=1KRdH1K55B4GUmARl0xKyN-GOMNNgS5uo" target="_blank">Controlling Phytoplankton Blooms</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Pratik Goyal</div>
+                </div>
+                <div class="overview">My proposed solution is to use quorum sensing to get an estimate of the algal population. If the concentration of algae crosses a certain threshold then turn on a gene which will initiate apoptosis in that algal population with a probability (p). This probability (p) will be determined by mathematical modelling and might depend on types of phytoplanktons, geographical environment, and the ecosystem. The goal of apoptosis would be to ensure the death rate equals the growth rate. The result would be a constant and steady population similar to the log phase growth in continuous culture....<a href="https://drive.google.com/open?id=1KRdH1K55B4GUmARl0xKyN-GOMNNgS5uo" target="_blank">know more</a></div>
+                <hr>
+            </div><br>            
+
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/open?id=1T1KYdqxtztkbnuwCfAxZH8B7FkysBKkn" target="_blank">Rain Causing bacteria- A probable solution to rainfall shortage?</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Arushi Midha & Khushi Mulge</div>
+                </div>
+                <div class="overview">India’s economy is farm dependent with monsoon being a crucial source of water supply necessary for agriculture, industry and households in the country. A poor monsoon season can have a rippling effect on India’s economy and growth. Rain causing bacteria like P.Syringae can help cause rain and can work as an economically feasible solution. But keeping in mind that such bacteria are plant pathogens, we use recombinant DNA technology for help....<a href="https://drive.google.com/open?id=1T1KYdqxtztkbnuwCfAxZH8B7FkysBKkn" target="_blank">know more</a></div>
+                <hr>
+            </div><br>
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/open?id=1IuUNrSJRRDeO1i20nxNBRoJQA6nhOIwQ" target="_blank">Engineering Bacteria to fight Ocean Pollution caused by Microplastics</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Diya Sankhla</div>
+                </div>
+                <div class="overview">It was discovered that  Ideonella sakaiensis bacteria of genus Ideonella and family Comamonadeceases are naturally capable of degrading PET plastic into Terephthalic acid and ethylene glycol  by releasing PETase enzyme .They release enzyme outside the cell  to degrade PET and utilize it as Carbon and energy source. Since Ideonella sakaiensis is poorly characterized and even because of limitations like pH,temperature and growth conditions they cannot be used to genetically engineer for more PETase production.E.coli is most studied organisms with known gene sequences and rapid growth rate under several conditions,that’s why it has been chosen as Model organism to be genetically engineered using Recombinant Dna Technology and we can use E Coli plasmid as a vector to carry PET degrading gene....<a href="https://drive.google.com/open?id=1IuUNrSJRRDeO1i20nxNBRoJQA6nhOIwQ" target="_blank">know more</a></div>
+                <hr>
+            </div><br>
+ 
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/open?id=1eBoHBlIrO-zq4hJGYmQHj6WbxVpxRO6g" target="_blank">Eradicating Malaria through Gene Drive</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Neelansh Kalra</div>
+                </div>
+                <div class="overview">Mosquitoes are more than just annoying summertime pests: they are some of the deadliest animals on the planet. The tiny, blood-sucking, itch-causing creatures are the perfect carriers for a range of nasty (and often deadly) diseases, including dengue fever, yellow fever, the zika virus and malaria. Malaria, alone, infects hundreds of millions of people and results in hundreds of thousands of deaths every year. According to the World Health Organization, it kills a child under the age of five every two minutes. Despite global efforts to eradicate malaria, progress has stalled. The only possible way to eradicate Malaria is Gene Drive.....<a href="https://drive.google.com/open?id=1eBoHBlIrO-zq4hJGYmQHj6WbxVpxRO6g" target="_blank">know more</a></div>
+                <hr>
+            </div><br>
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/file/d/1VSdde8L1RE5-6gShhnQfkEn7FMIqFVJ2/view?usp=sharing" target="_blank">Allergen Free Genetically Engineered Food</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Komalla Vennela</div>
+                </div>
+                <div class="overview">After affected by the allergy, medication would the option by most of us. Though it may cure the allergy, it leaves us with many side effects. A person who already has gone through surgeries or using medicines for other problems he/she has, may find it difficult as his/her immunity system would have already become weak. This RNAi technique is a post transcriptional way to supress the production of proteins. When RNA interference occurs the protein cannot be expressed, as there is no corresponding mRNA to translate. It cannot be translated if the transcribed copies were destroyed.So, now my idea is to carryout the whole process in the lab with the RNA that gets translated into Ara h2 protein such that the protein is not formed. This gives rise to a genetically modified plant. Similarly, this method can be carried out to any food substance and supress the protein which is a potent allergen.......<a href="https://drive.google.com/file/d/1VSdde8L1RE5-6gShhnQfkEn7FMIqFVJ2/view?usp=sharing" target="_blank">know more</a></div>
+                <hr>
+            </div><br>
+            
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/open?id=1sLRVavGZR8_48S9BpJ-3nveDJZ6-r_7i" target="_blank">Potential Treatment of Genetic Diseases- Stem Cell Gene Therapy</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Manav Garg & Kshitij Thakur & Piyush Mathur</div>
+                </div>
+                <div class="overview">After manipulation ( in-vitro), these cells can be retransplanted into the patient by injection where they will travel to the place where they can actively function - the Bone marrow. Here an important step needs to be done before modified stem cell insertion, i.e., we need to kill some of the existing stem cells in the bone marrow. The reason for this is that we want our new stem cells to divide and finally contribute to the formation of new cells in the body, so if we kill old cells, the new cells would reach the bone marrow and divide....<a href="https://drive.google.com/open?id=1sLRVavGZR8_48S9BpJ-3nveDJZ6-r_7i" target="_blank">know more</a></div>
+                <hr>
+            </div><br>    
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/file/d/1SD6gGWdyY_dY55Y1RGIeeE9bxuUBow2v/view?usp=sharing" target="_blank">Plasma Therapy</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Aditya Kumar</div>
+                </div>
+                <div class="overview">As we discuss initially , we use antibodies of recovered patients .These antibodies develop in the patient body as a part of the body's natural immune response to an external pathogen (in this case SARS Covid-19 ). When the patient has recovered , they donate their blood so that their antibody can be used to treat other infected patients.The donated blood is then checked  for presence of any other diseases , eg: Hepatitis B, Hepatitis C, HIV, etc. If blood doesn't contain these pathogenic diseases(shown above) then the blood is taken through a process to extract plasma, the liquid part of the blood which contains antibodies. Once plasma extracted (antibodies reach plasma) then ingested into the body of those patients who are under treatment.....<a href="https://drive.google.com/file/d/1SD6gGWdyY_dY55Y1RGIeeE9bxuUBow2v/view?usp=sharing" target="_blank">know more</a></div>
+                <hr>
+            </div><br>
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/open?id=1IX5BTCCIjn_wzbfkuccxgzSXtsYlsXNH" target="_blank">Overcoming antibioitic resistance by Post Transcriptional Gene Silencing.</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Nagam Vamsi Krishna & Rakesh Gupta</div>
+                </div>
+                <div class="overview">Antibiotics have a wide range of applications in different fields mainly in curing many infections in humans and many other animals.But the use of antibiotics has been increasing over the past few years.This over usage of antibiotics is leading to the development of resistance towards them in bacteria. When bacteria are treated with antibiotics regularly, they tend to develop genes that counter attacks the effect of antibiotics.The infections these bacteria cause are harder to treat than those caused by non resistant bacteria. A growing number of infections are becoming hard to treat as antibiotics used to treat them become less effective.We are slowly heading into an era in which common infections may have the potential to kill.....<a href="https://drive.google.com/open?id=1IX5BTCCIjn_wzbfkuccxgzSXtsYlsXNH" target="_blank">know more</a></div>
+                <hr>
+            </div><br>
+            
+            
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/open?id=1HHzmJdQGH3ZOhwra_fuw6QtCbgaSa6S-" target="_blank">Recent Advances in Treatment of Cancer</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Ankit Bhardwaj</div>
+                </div>
+                <div class="overview">One way to try to block cancer’s evolutionary escape routes is to use drug combinations that target multiple oncogenic pathways at once. However, many cancers eventually go on to evolve multidrug resistance. There’s also the issue of toxicity: generally, the more drugs a clinician administers, the higher a patient’s risk of side effects. An alternative strategy is to set a sort of evolutionary trap by administering a combination of drugs in a particular order....<a href="https://drive.google.com/open?id=1HHzmJdQGH3ZOhwra_fuw6QtCbgaSa6S-" target="_blank">know more</a></div>
+                <hr>
+            </div><br>
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/file/d/1_pfvCLuILFgbsYM2EwDhXKDSVPVf5ilD/view?usp=sharing" target="_blank">Intersex- A Sexual Disorder</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Vinay Raj</div>
+                </div>
+                <div class="overview">An intersex person is someone who is born with sexual or reproductive anatomy that does not seem to fit the typical definitions of male or female. For example – a person appearing female from the outside during birth, has mostly male typical anatomy on the inside. The write-up will guide you through various aspects of the disorder like the symptoms, causes and the lines of action for the treatment.....<a href="https://drive.google.com/file/d/1_pfvCLuILFgbsYM2EwDhXKDSVPVf5ilD/view?usp=sharing" target="_blank">know more</a></div>
+                <hr>
+            </div><br>
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/file/d/11Ky5nC5oxOqC-nLMeHuTF_9hNEEqTPPt/view?usp=sharing" target="_blank">[BTP] Electricity from Microbes</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Aditya Kumar</div>
+                </div>
+                <div class="overview">So the question is how we can obtain relative motion of magnetic field. The answer is simple, we use a particular type of bacteria which contain magnetic body. It also has flagella for movement and also is sensitive to the earth’s magnetic field. They have iron in their cells in form of chains known as magnetosome and bacteria is known as magnetotactic bacteria. We insert bacteria in small tube on which copper is coiled and with the help of its flagella bacteria moves in tube, cuts the magnetic flux produced by earth, resulting in generation of electricity.....<a href="https://drive.google.com/file/d/11Ky5nC5oxOqC-nLMeHuTF_9hNEEqTPPt/view?usp=sharing" target="_blank">know more</a></div>
+                <hr>
+            </div><br>
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/file/d/1yLE_hwBxqJj5V0RNEhEVoTInGRvduW2P/view?usp=sharing" target="_blank">Recombinant Hepatitis B Vaccine</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Raj Kumar</div>
+                </div>
+                <div class="overview">Hepatitis B Virus (HBV) is one of the most common infectious diseases known to human. The writeup discusses steps for recombinant Hepatitis B vaccine production and its benefits. Traditional vaccine use a weakened or killed form of a virus to force the body to develop antibodies that are strong enough to combat the virus. Using the recombinant DNA technology, the vaccine uses the  surface antigen of the virus that stimulates the production of protective antibodies which combat the HB virus....<a href="https://drive.google.com/file/d/1yLE_hwBxqJj5V0RNEhEVoTInGRvduW2P/view?usp=sharing" target="_blank">know more</a></div>
+                <hr>
+            </div><br>
+
+            <div class="box">
+                <br>
+                <div class="title"><a href="https://drive.google.com/open?id=1JU-Rn5Rk5K02HN4jvmgt_dwYF-8MlAm0" target="_blank">Mosquiteer's Gambit</a> </div>
+                <div class="article-info">
+                    <div class="author"><i class="fa fa-pencil-square-o" area-hidden="true"></i> Amaxin Evi1haxor [aka- Archit Dwivedi]</div>
+                </div>
+                <div class="overview">Having my room just beside the garden, I evoked my hatred toward these little sanguivorous flies. Just when India is struggling with a global pandemic, the yearly malaria crisis may come on the doorstep any time now. Although the government does what it has to, but I ask, is it the best we can do? Every year, literally waiting for it to hit us? One way, also proposed in the literature, is to kill all the mosquitoes. But I believe as far as vector-borne diseases are concerned, vanishing off a complete species just because they steal your blood is not worth the risk that the ecosystem has to suffer because of this action. So what if we could selectively kill those mosquitoes which are infected by the pathogen- The vectors. While it can be replicated for all the vector-borne diseases, my idea takes mosquitoes as the model vector. It puts a framework to engineer a tool that can automate the task of selectively killing the infected vectors and, once sterilized, to convert them into 100% natural and biodegradable chemical test kit....<a href="https://drive.google.com/open?id=1JU-Rn5Rk5K02HN4jvmgt_dwYF-8MlAm0" target="_blank">know more</a></div>
+                <hr>
+            </div><br>
+
+
+        </div>
+        <a name="contacts"></a>
+
+    </div>
+    
+    <div class="animated fadeInUp delay-1s">
+        <div class="contact">
+                <div><span class="contacts">Contact</span>
+                    <ul>
+                            <li><a href="mailto:bio1ixir@googlegroups.com">Bio1ixir Google Group</a></li>
+                            <li><a href="mailto:bio1ixir.iitj@gmail.com">Executive Head</a></li>
+        
+                    </ul>
+                </div>
+    
+                <div class="ql"><span class="links">Quick Links</span>
+                    <ul>
+                        <li><a href="https://iitj.ac.in" target="_blank">IITJ website</a></li>
+                        <li><a href="http://iitj.ac.in/department/index.php?id=biology" target="_blank">BSBE Department</a></li>
+                        <li><a href="http://iitj.ac.in/academics/index.php?id=acad_program&&prog=46" target="_blank">Academia- IITJ</a></li>
+                        <li><a href="https://students.iitj.ac.in/" target="_blank">Students' Gymkhana- IITJ</a></li>
+                        <li><a href="http://iitj.ac.in/academics/index.php?id=academic_calendar" target="_blank">Academic Calendar</a></li>
+                        <li><a href="http://spc.iitj.ac.in/" target="_blank">Students' Placement Cell- IITJ</a></li>
+                        <li><a href="http://ir.iitj.ac.in:8080/jspui/" target="_blank">Institutional Repository</a></li>
+                        <li><a href="https://raw.githubusercontent.com/bio1ixir/resources/master/documents/bb.jpg" target="_blank">B.Tech. in Bioengineering</a></li>
+                        <li><a href="https://bio1ixir.github.io/src/CoC/" target="_blank">CoC- Executive Head</a></li>
+                        <li><a href="https://bio1ixir.github.io/src/contribute/" target="_blank">Contributors Manual</a></li>
+                        <li><a href="http://iitj.ac.in/footer/index.php?id=faq" target="_blank">FAQ- IITJ</a></li>
+                    </ul>
+                </div>
+    
+                <div><span class="get-involved">Get Involved</span>
+                    <ul>
+                        <li><a href="https://github.com/bio1ixir/" target="_blank">Contribute on GitHub</a></li>
+                        <li><a href="mailto:bio1ixir.iitj@gmail.com">Seed & Suggest</a></li>
+                        <li><a href="mailto:bio1ixir.iitj@gmail.com">Request Membership</a></li>
+                    </ul>
+                </div>
+        </div>
+        </div>
+    
+    <footer class="animated fadeInup delay-0s">
+        <p class="footer-text">© 2020 Bio1ixir - IIT Jodhpur</p>
+        <p class="footer-text"><i class="fa fa-code" area-hidden="true"></i> with <i class="em em-brain"></i> by<br>
+        <a class="tag underline-magical" href="https://github.com/evi1haxor/" target="_blank">evi1haxor</a></p>
+    </footer>
+    </body>
+    
+    
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+</html>
