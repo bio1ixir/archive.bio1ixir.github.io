@@ -1,15 +1,12 @@
 /* CLASS CSS */
 .reach-out .active {
-    color:rgba(64, 4, 82, 0.63);
-    /* padding: 10px 0px 0 10px; */
+  color: rgba(64, 4, 82, 0.541);
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    /* padding: 0 0px 5px 10px; */
 }
 .reach-out .active a{
-text-decoration: none;
+    text-decoration: none;
 }
- /* Three columns side by side */
 .column {
 width: 100%;
 margin-bottom: 16px;
