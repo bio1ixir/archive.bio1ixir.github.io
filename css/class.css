@@ -43,7 +43,7 @@ padding-right: 10px;
 
 /* Some left and right padding inside the container */
 .team-container {
-padding: 0px 0 0 0px;
+padding: 0px 10px 0 0px;
 }
 
 .team-container .name-head {
