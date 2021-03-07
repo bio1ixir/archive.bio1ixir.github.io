@@ -352,19 +352,292 @@ code {
                   <p>Checkout my projects in the Archives ;)</p>
                 </div>
               </div> 
-            </div>
+            </div>             
             <div class="column">
               <div class="card">
-                <img src="../../images/31.jpg" style="height: auto;" alt="Avatar" >
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
                 <div class="team-container">
-                  <div class="name-head"><b>30 Others</b></div>
-
-                  <p>Request your card <a href="mailto:dwivedi.2@iitj.ac.in">here</a>.</p>
+                  <div class="name-head"><b>ROHIT KUMAR SAHU</b></div>
+                  <div class="reach-out">
+                    <div class="active">
+                      <a href="mailto:sahu.9@iitj.ac.in" target="_blank"><i class="fa fa-envelope-o active" aria-hidden="true"></i></a>
+                      <a href="https://www.linkedin.com/in/rohit-kumar-sahu-1a030116b/" target="_blank"><i class="fa fa-linkedin active" aria-hidden="true"></i></a>
+                      <a href="https://www.instagram.com/rohit.sahu_01/" target="_blank"><i class="fa fa-instagram active" aria-hidden="true"></i></a>
+                      <a href="https://t.me/rohit/" target="_blank"><i class="fa fa-telegram active" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <p><b>Interests:</b> Probably you.</p>
                 </div>
               </div> 
             </div>
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>ADITYA KUMAR</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>AKASH GARG</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>AMAN PRATAP SINGH</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>ANKIT BHARDWAJ</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeF.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>ARUSHI MIDHA</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>ASHUTOSH SANODIA</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>BAI YASWANTH</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>CHINDAM SOURABH</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>CHITLURI RAKESH GUPTA</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>HEMANT CHOUHAN</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeF.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>KHUSHI MULGE</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeF.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>KOMALLA VENNELA</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>KSHITIJ THAKUR</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>             
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>MUKUL KUMAR BABRA</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>NEELANSH KALRA</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>              
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeF.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>NIDHI SHARMA</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>PIYUSH MATHUR</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>              
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>PRADYUMN VERMA</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>                
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>PRATHAM JALAL</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>PRATIK GOYAL</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>                 
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>PUSHPANK PRADEEP KATARE</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>RAJ KUMAR</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>RAJAT AJAY VINCHURKAR</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>                                     
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>S VIJAY BHARGAV</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>  
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>SHANIT RAJESH NAGRE</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>                                                     
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>TEJAS MAHESH KALE</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>VAIBHAV PAL</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>               
+            <div class="column">
+              <div class="card">
+                <img src="../../images/doggeM.jpeg" alt="Avatar" >
+                <div class="team-container">
+                  <div class="name-head"><b>VINAY RAJ</b></div>
+                  <p><b>Interests:</b> Probably you.</p>
+                </div>
+              </div> 
+            </div>            
 
-          </div>
+
+          </div>            
+
+
+
+
         </div>
         <a name="contacts"></a>
 
